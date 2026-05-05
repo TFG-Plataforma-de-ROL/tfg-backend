@@ -1,6 +1,4 @@
 // prisma/schema.prisma
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
   provider = "prisma-client-js"
@@ -10,21 +8,132 @@ datasource db {
   provider = "postgresql"
 }
 
-model Usuario {
-  id         Int      @id @default(autoincrement())
-  nombre     String   @db.VarChar(100)
-  email      String   @unique @db.VarChar(255)
-  password   String   @db.VarChar(255)
-  created_at DateTime @default(now()) @db.Timestamp(6)
-  tareas     Tarea[]
+model SistemaRol {
+  id_sistema_rol Int              @id @default(autoincrement())
+  nombre         String           @db.VarChar(100)
+  descripcion    String?          @db.Text
+  personajes     Personaje[]
+  foros          Foro[]
+  items          Item[]
+  plantillas     FichaPlantilla[]
+  fichas         FichaPersonaje[]
+
+  @@map("sistema_rol")
 }
 
-model Tarea {
-  id          Int      @id @default(autoincrement())
-  titulo      String   @db.VarChar(200)
-  descripcion String?  @db.Text
-  completado  Boolean  @default(false)
-  usuario_id  Int
-  created_at  DateTime @default(now()) @db.Timestamp(6)
-  usuario     Usuario   @relation(fields: [usuario_id], references: [id])
+model Usuario {
+  id_usuario Int         @id @default(autoincrement())
+  nombre     String      @db.VarChar(100)
+  email      String      @unique @db.VarChar(255)
+  password   String      @db.VarChar(255)
+  created_at DateTime    @default(now()) @db.Timestamp(6)
+  personajes Personaje[]
+
+  @@map("usuarios")
+}
+
+model Personaje {
+  id_personaje   Int              @id @default(autoincrement())
+  id_usuario     Int
+  id_sistema_rol Int
+  nombre         String           @db.VarChar(100)
+  descripcion    String?          @db.Text
+  usuario        Usuario          @relation(fields: [id_usuario], references: [id_usuario])
+  sistema_rol    SistemaRol       @relation(fields: [id_sistema_rol], references: [id_sistema_rol])
+  fichas         FichaPersonaje[]
+
+  @@map("personajes")
+}
+
+model Mensaje {
+  id_mensaje Int     @id @default(autoincrement())
+  titulo     String  @db.VarChar(50)
+  cuerpo     String  @db.VarChar(400)
+  tags       String? @db.VarChar(20)
+  foros      Foro[]
+
+  @@map("mensajes")
+}
+
+model Foro {
+  id_foro        Int         @id @default(autoincrement())
+  id_sistema_rol Int?
+  id_mensaje     Int?
+  sistema_rol    SistemaRol? @relation(fields: [id_sistema_rol], references: [id_sistema_rol])
+  mensaje        Mensaje?    @relation(fields: [id_mensaje], references: [id_mensaje])
+
+  @@map("foros")
+}
+
+model Item {
+  id_item        Int              @id @default(autoincrement())
+  id_sistema_rol Int?
+  tipo_item      String           @db.VarChar(50)
+  nombre         String           @db.VarChar(100)
+  todos_datos    Json?
+  sistema_rol    SistemaRol?      @relation(fields: [id_sistema_rol], references: [id_sistema_rol])
+  fichas_especie FichaPersonaje[] @relation("FichaEspecie")
+  fichas_clase   FichaPersonaje[] @relation("FichaClase")
+  campos_valor   CampoValor[]
+
+  @@map("item")
+}
+
+model FichaPlantilla {
+  id_plantilla     Int              @id @default(autoincrement())
+  id_sistema_rol   Int?
+  nombre_plantilla String           @db.VarChar(100)
+  version          Int              @default(1)
+  sistema_rol      SistemaRol?      @relation(fields: [id_sistema_rol], references: [id_sistema_rol])
+  campos           CampoPlantilla[]
+
+  @@map("ficha_plantilla")
+}
+
+model CampoPlantilla {
+  id_campo_plantilla Int            @id @default(autoincrement())
+  id_plantilla       Int
+  nombre_campo       String         @db.VarChar(100)
+  id_item_tipo       Json?
+  plantilla          FichaPlantilla @relation(fields: [id_plantilla], references: [id_plantilla])
+  campos_valor       CampoValor[]
+
+  @@map("campo_plantilla")
+}
+
+model FichaPersonaje {
+  id_ficha       Int            @id @default(autoincrement())
+  id_personaje   Int
+  id_especie     Int?
+  id_clase       Int?
+  id_sistema_rol Int?
+  nombre         String         @db.VarChar(100)
+  nivel          Int            @default(1)
+  fuerza         Int            @default(0)
+  destreza       Int            @default(0)
+  constitucion   Int            @default(0)
+  inteligencia   Int            @default(0)
+  sabiduria      Int            @default(0)
+  carisma        Int            @default(0)
+  puntos_vida    Int            @default(0)
+  clase_armadura Int            @default(0)
+  personaje      Personaje      @relation(fields: [id_personaje], references: [id_personaje])
+  especie        Item?          @relation("FichaEspecie", fields: [id_especie], references: [id_item])
+  clase          Item?          @relation("FichaClase", fields: [id_clase], references: [id_item])
+  sistema_rol    SistemaRol?    @relation(fields: [id_sistema_rol], references: [id_sistema_rol])
+  campos_valor   CampoValor[]
+
+  @@map("ficha_personaje")
+}
+
+model CampoValor {
+  id_campo_valor     Int            @id @default(autoincrement())
+  id_ficha           Int
+  id_campo_plantilla Int
+  id_item_valor      Int?
+  ficha              FichaPersonaje @relation(fields: [id_ficha], references: [id_ficha])
+  campo_plantilla    CampoPlantilla @relation(fields: [id_campo_plantilla], references: [id_campo_plantilla])
+  item_valor         Item?          @relation(fields: [id_item_valor], references: [id_item])
+
+  @@map("campo_valor")
 }
