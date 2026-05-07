@@ -67,14 +67,12 @@ model Foro {
 }
 
 model Item {
-  id_item        Int              @id @default(autoincrement())
+  id_item        Int            @id @default(autoincrement())
   id_sistema_rol Int?
-  tipo_item      String           @db.VarChar(50)
-  nombre         String           @db.VarChar(100)
+  tipo_item      String         @db.VarChar(50)
+  nombre         String         @db.VarChar(100)
   todos_datos    Json?
-  sistema_rol    SistemaRol?      @relation(fields: [id_sistema_rol], references: [id_sistema_rol])
-  fichas_especie FichaPersonaje[] @relation("FichaEspecie")
-  fichas_clase   FichaPersonaje[] @relation("FichaClase")
+  sistema_rol    SistemaRol?    @relation(fields: [id_sistema_rol], references: [id_sistema_rol])
   campos_valor   CampoValor[]
 
   @@map("item")
@@ -105,22 +103,9 @@ model CampoPlantilla {
 model FichaPersonaje {
   id_ficha       Int            @id @default(autoincrement())
   id_personaje   Int
-  id_especie     Int?
-  id_clase       Int?
   id_sistema_rol Int?
   nombre         String         @db.VarChar(100)
-  nivel          Int            @default(1)
-  fuerza         Int            @default(0)
-  destreza       Int            @default(0)
-  constitucion   Int            @default(0)
-  inteligencia   Int            @default(0)
-  sabiduria      Int            @default(0)
-  carisma        Int            @default(0)
-  puntos_vida    Int            @default(0)
-  clase_armadura Int            @default(0)
   personaje      Personaje      @relation(fields: [id_personaje], references: [id_personaje])
-  especie        Item?          @relation("FichaEspecie", fields: [id_especie], references: [id_item])
-  clase          Item?          @relation("FichaClase", fields: [id_clase], references: [id_item])
   sistema_rol    SistemaRol?    @relation(fields: [id_sistema_rol], references: [id_sistema_rol])
   campos_valor   CampoValor[]
 

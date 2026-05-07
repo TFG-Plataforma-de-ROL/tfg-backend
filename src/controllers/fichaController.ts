@@ -35,10 +35,10 @@ export const fichaController = {
   async createFicha(req: Request, res: Response): Promise<void> {
     try {
       if (!req.user) { res.status(401).json({ error: 'No autorizado' }); return; }
-      const { nombre, id_sistema_rol, id_especie, id_clase, nivel, fuerza, destreza, constitucion, inteligencia, sabiduria, carisma, puntos_vida, clase_armadura } = req.body;
+      const { nombre, id_sistema_rol } = req.body;
       if (!nombre) { res.status(400).json({ error: 'Campo requerido: nombre' }); return; }
       const ficha = await fichaService.createFicha(Number(req.params.personajeId), req.user.id, {
-        nombre, id_sistema_rol, id_especie, id_clase, nivel, fuerza, destreza, constitucion, inteligencia, sabiduria, carisma, puntos_vida, clase_armadura,
+        nombre, id_sistema_rol,
       });
       res.status(201).json(ficha);
     } catch (error: unknown) {
@@ -51,12 +51,12 @@ export const fichaController = {
   async updateFicha(req: Request, res: Response): Promise<void> {
     try {
       if (!req.user) { res.status(401).json({ error: 'No autorizado' }); return; }
-      const { nombre, id_especie, id_clase, nivel, fuerza, destreza, constitucion, inteligencia, sabiduria, carisma, puntos_vida, clase_armadura } = req.body;
+      const { nombre } = req.body;
       const result = await fichaService.updateFicha(
         Number(req.params.fichaId),
         Number(req.params.personajeId),
         req.user.id,
-        { nombre, id_especie, id_clase, nivel, fuerza, destreza, constitucion, inteligencia, sabiduria, carisma, puntos_vida, clase_armadura }
+        { nombre }
       );
       if (result.count === 0) { res.status(404).json({ error: 'Ficha no encontrada' }); return; }
       res.json({ message: 'Ficha actualizada' });

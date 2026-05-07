@@ -3,7 +3,6 @@ import { prisma } from '../utils/prisma.js';
 
 export const fichaService = {
   async getFichas(idPersonaje: number, idUsuario: number) {
-    // Verifica que el personaje pertenece al usuario
     const personaje = await prisma.personaje.findFirst({
       where: { id_personaje: idPersonaje, id_usuario: idUsuario },
     });
@@ -11,10 +10,7 @@ export const fichaService = {
 
     return prisma.fichaPersonaje.findMany({
       where: { id_personaje: idPersonaje },
-      include: {
-        especie: { select: { id_item: true, nombre: true } },
-        clase: { select: { id_item: true, nombre: true } },
-      },
+      include: { sistema_rol: { select: { id_sistema_rol: true, nombre: true } } },
       orderBy: { id_ficha: 'desc' },
     });
   },
@@ -28,8 +24,6 @@ export const fichaService = {
     return prisma.fichaPersonaje.findFirst({
       where: { id_ficha: idFicha, id_personaje: idPersonaje },
       include: {
-        especie: true,
-        clase: true,
         sistema_rol: true,
         campos_valor: { include: { campo_plantilla: true } },
       },
@@ -42,17 +36,6 @@ export const fichaService = {
     data: {
       nombre: string;
       id_sistema_rol?: number;
-      id_especie?: number;
-      id_clase?: number;
-      nivel?: number;
-      fuerza?: number;
-      destreza?: number;
-      constitucion?: number;
-      inteligencia?: number;
-      sabiduria?: number;
-      carisma?: number;
-      puntos_vida?: number;
-      clase_armadura?: number;
     }
   ) {
     const personaje = await prisma.personaje.findFirst({
@@ -71,17 +54,6 @@ export const fichaService = {
     idUsuario: number,
     data: {
       nombre?: string;
-      id_especie?: number;
-      id_clase?: number;
-      nivel?: number;
-      fuerza?: number;
-      destreza?: number;
-      constitucion?: number;
-      inteligencia?: number;
-      sabiduria?: number;
-      carisma?: number;
-      puntos_vida?: number;
-      clase_armadura?: number;
     }
   ) {
     const personaje = await prisma.personaje.findFirst({
