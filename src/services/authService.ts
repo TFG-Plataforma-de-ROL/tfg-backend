@@ -17,7 +17,11 @@ export const authService = {
       select: { id_usuario: true, nombre: true, email: true, is_admin: true, created_at: true },
     });
 
-    const token = generateToken({ id: usuario.id_usuario, email: usuario.email, is_admin: usuario.is_admin });
+    const token = generateToken({
+      id: usuario.id_usuario,
+      email: usuario.email,
+      is_admin: usuario.is_admin,
+    });
     return { usuario, token };
   },
 
@@ -32,7 +36,11 @@ export const authService = {
       throw new Error('Contraseña incorrecta');
     }
 
-    const token = generateToken({ id: usuario.id_usuario, email: usuario.email, is_admin: usuario.is_admin });
+    const token = generateToken({
+      id: usuario.id_usuario,
+      email: usuario.email,
+      is_admin: usuario.is_admin,
+    });
     return {
       usuario: {
         id: usuario.id_usuario,
