@@ -2,6 +2,7 @@
 import { Router } from 'express';
 import { itemController } from '../controllers/itemController.js';
 import { authMiddleware } from '../middleware/auth.js';
+import { adminMiddleware } from '../middleware/admin.js';
 
 const router = Router();
 
@@ -9,9 +10,9 @@ const router = Router();
 router.get('/', itemController.getItems);
 router.get('/:id', itemController.getItemById);
 
-// Escritura protegida
-router.post('/', authMiddleware, itemController.createItem);
-router.put('/:id', authMiddleware, itemController.updateItem);
-router.delete('/:id', authMiddleware, itemController.deleteItem);
+// Escritura restringida a administradores
+router.post('/', authMiddleware, adminMiddleware, itemController.createItem);
+router.put('/:id', authMiddleware, adminMiddleware, itemController.updateItem);
+router.delete('/:id', authMiddleware, adminMiddleware, itemController.deleteItem);
 
 export default router;

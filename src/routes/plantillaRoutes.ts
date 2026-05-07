@@ -2,6 +2,7 @@
 import { Router } from 'express';
 import { plantillaController } from '../controllers/plantillaController.js';
 import { authMiddleware } from '../middleware/auth.js';
+import { adminMiddleware } from '../middleware/admin.js';
 
 const router = Router();
 
@@ -9,14 +10,14 @@ const router = Router();
 router.get('/', plantillaController.getPlantillas);
 router.get('/:id', plantillaController.getPlantillaById);
 
-// Escritura protegida — plantilla
-router.post('/', authMiddleware, plantillaController.createPlantilla);
-router.put('/:id', authMiddleware, plantillaController.updatePlantilla);
-router.delete('/:id', authMiddleware, plantillaController.deletePlantilla);
+// Escritura restringida a administradores — plantilla
+router.post('/', authMiddleware, adminMiddleware, plantillaController.createPlantilla);
+router.put('/:id', authMiddleware, adminMiddleware, plantillaController.updatePlantilla);
+router.delete('/:id', authMiddleware, adminMiddleware, plantillaController.deletePlantilla);
 
-// Escritura protegida — campos anidados
-router.post('/:plantillaId/campos', authMiddleware, plantillaController.createCampo);
-router.put('/:plantillaId/campos/:campoId', authMiddleware, plantillaController.updateCampo);
-router.delete('/:plantillaId/campos/:campoId', authMiddleware, plantillaController.deleteCampo);
+// Escritura restringida a administradores — campos anidados
+router.post('/:plantillaId/campos', authMiddleware, adminMiddleware, plantillaController.createCampo);
+router.put('/:plantillaId/campos/:campoId', authMiddleware, adminMiddleware, plantillaController.updateCampo);
+router.delete('/:plantillaId/campos/:campoId', authMiddleware, adminMiddleware, plantillaController.deleteCampo);
 
 export default router;
