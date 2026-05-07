@@ -2,6 +2,7 @@
 export interface JwtPayload {
   id: number;
   email: string;
+  is_admin: boolean;
   iat?: number;
   exp?: number;
 }

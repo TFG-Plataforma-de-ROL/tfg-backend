@@ -2,6 +2,7 @@
 import { Router } from 'express';
 import { sistemaRolController } from '../controllers/sistemaRolController.js';
 import { authMiddleware } from '../middleware/auth.js';
+import { adminMiddleware } from '../middleware/admin.js';
 
 const router = Router();
 
@@ -9,9 +10,9 @@ const router = Router();
 router.get('/', sistemaRolController.getSistemasRol);
 router.get('/:id', sistemaRolController.getSistemaRolById);
 
-// Escritura protegida
-router.post('/', authMiddleware, sistemaRolController.createSistemaRol);
-router.put('/:id', authMiddleware, sistemaRolController.updateSistemaRol);
-router.delete('/:id', authMiddleware, sistemaRolController.deleteSistemaRol);
+// Escritura restringida a administradores
+router.post('/', authMiddleware, adminMiddleware, sistemaRolController.createSistemaRol);
+router.put('/:id', authMiddleware, adminMiddleware, sistemaRolController.updateSistemaRol);
+router.delete('/:id', authMiddleware, adminMiddleware, sistemaRolController.deleteSistemaRol);
 
 export default router;

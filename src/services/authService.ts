@@ -14,10 +14,10 @@ export const authService = {
 
     const usuario = await prisma.usuario.create({
       data: { nombre, email, password: hashedPassword },
-      select: { id_usuario: true, nombre: true, email: true, created_at: true },
+      select: { id_usuario: true, nombre: true, email: true, is_admin: true, created_at: true },
     });
 
-    const token = generateToken({ id: usuario.id_usuario, email: usuario.email });
+    const token = generateToken({ id: usuario.id_usuario, email: usuario.email, is_admin: usuario.is_admin });
     return { usuario, token };
   },
 
@@ -32,12 +32,13 @@ export const authService = {
       throw new Error('Contraseña incorrecta');
     }
 
-    const token = generateToken({ id: usuario.id_usuario, email: usuario.email });
+    const token = generateToken({ id: usuario.id_usuario, email: usuario.email, is_admin: usuario.is_admin });
     return {
       usuario: {
         id: usuario.id_usuario,
         nombre: usuario.nombre,
         email: usuario.email,
+        is_admin: usuario.is_admin,
         created_at: usuario.created_at,
       },
       token,

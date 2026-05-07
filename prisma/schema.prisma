@@ -26,6 +26,7 @@ model Usuario {
   nombre     String      @db.VarChar(100)
   email      String      @unique @db.VarChar(255)
   password   String      @db.VarChar(255)
+  is_admin   Boolean     @default(false)
   created_at DateTime    @default(now()) @db.Timestamp(6)
   personajes Personaje[]
 
