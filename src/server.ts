@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 import authRoutes from './routes/authRoutes.js';
 import personajeRoutes from './routes/personajeRoutes.js';
 import sistemaRolRoutes from './routes/sistemaRolRoutes.js';
+import fichaRoutes from './routes/fichaRoutes.js';
 
 dotenv.config();
 
@@ -21,6 +22,7 @@ app.get('/api/health', (_req: Request, res: Response) => {
 app.use('/api/auth', authRoutes);
 app.use('/api/personajes', personajeRoutes);
 app.use('/api/sistemas-rol', sistemaRolRoutes);
+app.use('/api/personajes/:personajeId/fichas', fichaRoutes);
 
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Servidor backend en http://0.0.0.0:${PORT}`);
