@@ -14,4 +14,10 @@ router.post('/', fichaController.createFicha);
 router.put('/:fichaId', fichaController.updateFicha);
 router.delete('/:fichaId', fichaController.deleteFicha);
 
+// Rutas de CampoValor
+router.get('/:fichaId/valores', fichaController.getValores);
+router.post('/:fichaId/valores', fichaController.createValor);
+router.put('/:fichaId/valores/:valorId', fichaController.updateValor);
+router.delete('/:fichaId/valores/:valorId', fichaController.deleteValor);
+
 export default router;

@@ -46,17 +46,26 @@ export const plantillaService = {
 
   // --- CampoPlantilla ---
 
-  async createCampo(id_plantilla: number, nombre_campo: string, id_item_tipo?: object) {
-    // Verifica que la plantilla exista
+  async createCampo(
+    id_plantilla: number,
+    nombre_campo: string,
+    nivel_disponible?: number,
+    tipo_campo?: string,
+    filtro_item?: string
+  ) {
     const plantilla = await prisma.fichaPlantilla.findUnique({ where: { id_plantilla } });
     if (!plantilla) throw new Error('Plantilla no encontrada');
 
     return prisma.campoPlantilla.create({
-      data: { id_plantilla, nombre_campo, id_item_tipo },
+      data: { id_plantilla, nombre_campo, nivel_disponible, tipo_campo, filtro_item },
     });
   },
 
-  async updateCampo(id_campo: number, id_plantilla: number, data: { nombre_campo?: string; id_item_tipo?: object }) {
+  async updateCampo(
+    id_campo: number,
+    id_plantilla: number,
+    data: { nombre_campo?: string; nivel_disponible?: number; tipo_campo?: string; filtro_item?: string }
+  ) {
     return prisma.campoPlantilla.updateMany({
       where: { id_campo_plantilla: id_campo, id_plantilla },
       data,

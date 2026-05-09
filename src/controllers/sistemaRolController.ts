@@ -26,9 +26,9 @@ export const sistemaRolController = {
 
   async createSistemaRol(req: Request, res: Response): Promise<void> {
     try {
-      const { nombre, descripcion } = req.body;
+      const { nombre, descripcion, nivel_maximo } = req.body;
       if (!nombre) { res.status(400).json({ error: 'Campo requerido: nombre' }); return; }
-      const sistema = await sistemaRolService.createSistemaRol(nombre, descripcion);
+      const sistema = await sistemaRolService.createSistemaRol(nombre, descripcion, nivel_maximo);
       res.status(201).json(sistema);
     } catch (error: unknown) {
       const message = error instanceof Error ? error.message : 'Error inesperado';
@@ -38,8 +38,8 @@ export const sistemaRolController = {
 
   async updateSistemaRol(req: Request, res: Response): Promise<void> {
     try {
-      const { nombre, descripcion } = req.body;
-      const sistema = await sistemaRolService.updateSistemaRol(Number(req.params.id), { nombre, descripcion });
+      const { nombre, descripcion, nivel_maximo } = req.body;
+      const sistema = await sistemaRolService.updateSistemaRol(Number(req.params.id), { nombre, descripcion, nivel_maximo });
       res.json(sistema);
     } catch (error: unknown) {
       const message = error instanceof Error ? error.message : 'Error inesperado';

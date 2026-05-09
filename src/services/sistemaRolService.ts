@@ -14,13 +14,13 @@ export const sistemaRolService = {
     });
   },
 
-  async createSistemaRol(nombre: string, descripcion?: string) {
+  async createSistemaRol(nombre: string, descripcion?: string, nivel_maximo?: number) {
     return prisma.sistemaRol.create({
-      data: { nombre, descripcion },
+      data: { nombre, descripcion, nivel_maximo },
     });
   },
 
-  async updateSistemaRol(id: number, data: { nombre?: string; descripcion?: string }) {
+  async updateSistemaRol(id: number, data: { nombre?: string; descripcion?: string; nivel_maximo?: number }) {
     return prisma.sistemaRol.update({
       where: { id_sistema_rol: id },
       data,

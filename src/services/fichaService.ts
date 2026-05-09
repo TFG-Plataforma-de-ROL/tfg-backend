@@ -77,4 +77,95 @@ export const fichaService = {
       where: { id_ficha: idFicha, id_personaje: idPersonaje },
     });
   },
+
+  // --- CampoValor ---
+
+  async getValores(idFicha: number, idPersonaje: number, idUsuario: number) {
+    const personaje = await prisma.personaje.findFirst({
+      where: { id_personaje: idPersonaje, id_usuario: idUsuario },
+    });
+    if (!personaje) throw new Error('Personaje no encontrado');
+
+    const ficha = await prisma.fichaPersonaje.findFirst({
+      where: { id_ficha: idFicha, id_personaje: idPersonaje },
+    });
+    if (!ficha) throw new Error('Ficha no encontrada');
+
+    return prisma.campoValor.findMany({
+      where: { id_ficha: idFicha },
+      include: {
+        campo_plantilla: true,
+        item_valor: true,
+      },
+    });
+  },
+
+  async createValor(
+    idFicha: number,
+    idPersonaje: number,
+    idUsuario: number,
+    data: {
+      id_campo_plantilla: number;
+      id_item_valor?: number;
+      valor_texto?: string;
+      valor_numero?: number;
+    }
+  ) {
+    const personaje = await prisma.personaje.findFirst({
+      where: { id_personaje: idPersonaje, id_usuario: idUsuario },
+    });
+    if (!personaje) throw new Error('Personaje no encontrado');
+
+    const ficha = await prisma.fichaPersonaje.findFirst({
+      where: { id_ficha: idFicha, id_personaje: idPersonaje },
+    });
+    if (!ficha) throw new Error('Ficha no encontrada');
+
+    return prisma.campoValor.create({
+      data: { id_ficha: idFicha, ...data },
+    });
+  },
+
+  async updateValor(
+    idValor: number,
+    idFicha: number,
+    idPersonaje: number,
+    idUsuario: number,
+    data: {
+      id_item_valor?: number | null;
+      valor_texto?: string | null;
+      valor_numero?: number | null;
+    }
+  ) {
+    const personaje = await prisma.personaje.findFirst({
+      where: { id_personaje: idPersonaje, id_usuario: idUsuario },
+    });
+    if (!personaje) throw new Error('Personaje no encontrado');
+
+    const ficha = await prisma.fichaPersonaje.findFirst({
+      where: { id_ficha: idFicha, id_personaje: idPersonaje },
+    });
+    if (!ficha) throw new Error('Ficha no encontrada');
+
+    return prisma.campoValor.updateMany({
+      where: { id_campo_valor: idValor, id_ficha: idFicha },
+      data,
+    });
+  },
+
+  async deleteValor(idValor: number, idFicha: number, idPersonaje: number, idUsuario: number) {
+    const personaje = await prisma.personaje.findFirst({
+      where: { id_personaje: idPersonaje, id_usuario: idUsuario },
+    });
+    if (!personaje) throw new Error('Personaje no encontrado');
+
+    const ficha = await prisma.fichaPersonaje.findFirst({
+      where: { id_ficha: idFicha, id_personaje: idPersonaje },
+    });
+    if (!ficha) throw new Error('Ficha no encontrada');
+
+    return prisma.campoValor.deleteMany({
+      where: { id_campo_valor: idValor, id_ficha: idFicha },
+    });
+  },
 };

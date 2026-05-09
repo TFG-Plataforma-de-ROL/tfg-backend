@@ -66,9 +66,15 @@ export const plantillaController = {
 
   async createCampo(req: Request, res: Response): Promise<void> {
     try {
-      const { nombre_campo, id_item_tipo } = req.body;
+      const { nombre_campo, nivel_disponible, tipo_campo, filtro_item } = req.body;
       if (!nombre_campo) { res.status(400).json({ error: 'Campo requerido: nombre_campo' }); return; }
-      const campo = await plantillaService.createCampo(Number(req.params.plantillaId), nombre_campo, id_item_tipo);
+      const campo = await plantillaService.createCampo(
+        Number(req.params.plantillaId),
+        nombre_campo,
+        nivel_disponible,
+        tipo_campo,
+        filtro_item
+      );
       res.status(201).json(campo);
     } catch (error: unknown) {
       const message = error instanceof Error ? error.message : 'Error inesperado';
@@ -79,11 +85,11 @@ export const plantillaController = {
 
   async updateCampo(req: Request, res: Response): Promise<void> {
     try {
-      const { nombre_campo, id_item_tipo } = req.body;
+      const { nombre_campo, nivel_disponible, tipo_campo, filtro_item } = req.body;
       const result = await plantillaService.updateCampo(
         Number(req.params.campoId),
         Number(req.params.plantillaId),
-        { nombre_campo, id_item_tipo }
+        { nombre_campo, nivel_disponible, tipo_campo, filtro_item }
       );
       if (result.count === 0) { res.status(404).json({ error: 'Campo no encontrado' }); return; }
       res.json({ message: 'Campo actualizado' });

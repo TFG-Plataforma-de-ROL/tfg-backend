@@ -12,6 +12,7 @@ model SistemaRol {
   id_sistema_rol Int              @id @default(autoincrement())
   nombre         String           @db.VarChar(100)
   descripcion    String?          @db.Text
+  nivel_maximo   Int              @default(1)
   personajes     Personaje[]
   foros          Foro[]
   items          Item[]
@@ -93,7 +94,9 @@ model CampoPlantilla {
   id_campo_plantilla Int            @id @default(autoincrement())
   id_plantilla       Int
   nombre_campo       String         @db.VarChar(100)
-  id_item_tipo       Json?
+  nivel_disponible   Int            @default(1)
+  tipo_campo         String         @default("texto") @db.VarChar(20)
+  filtro_item        String?        @db.VarChar(50)
   plantilla          FichaPlantilla @relation(fields: [id_plantilla], references: [id_plantilla])
   campos_valor       CampoValor[]
 
@@ -117,6 +120,8 @@ model CampoValor {
   id_ficha           Int
   id_campo_plantilla Int
   id_item_valor      Int?
+  valor_texto        String?        @db.Text
+  valor_numero       Int?
   ficha              FichaPersonaje @relation(fields: [id_ficha], references: [id_ficha])
   campo_plantilla    CampoPlantilla @relation(fields: [id_campo_plantilla], references: [id_campo_plantilla])
   item_valor         Item?          @relation(fields: [id_item_valor], references: [id_item])
