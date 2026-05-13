@@ -12,6 +12,7 @@ router.get('/', fichaController.getFichas);
 router.get('/:fichaId', fichaController.getFichaById);
 router.post('/', fichaController.createFicha);
 router.put('/:fichaId', fichaController.updateFicha);
+router.put('/:fichaId/campos', fichaController.saveCampos);
 router.delete('/:fichaId', fichaController.deleteFicha);
 
 export default router;

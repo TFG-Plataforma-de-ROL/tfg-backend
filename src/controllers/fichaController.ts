@@ -83,4 +83,26 @@ export const fichaController = {
       res.status(status).json({ error: message });
     }
   },
+
+  async saveCampos(req: Request, res: Response): Promise<void> {
+    try {
+      if (!req.user) { res.status(401).json({ error: 'No autorizado' }); return; }
+      const { campos } = req.body;
+      if (!Array.isArray(campos)) {
+        res.status(400).json({ error: 'Se esperaba un array "campos"' });
+        return;
+      }
+      const ficha = await fichaService.saveCampos(
+        Number(req.params.fichaId),
+        Number(req.params.personajeId),
+        req.user.id,
+        campos
+      );
+      res.json(ficha);
+    } catch (error: unknown) {
+      const message = error instanceof Error ? error.message : 'Error inesperado';
+      const status = ['Personaje no encontrado', 'Ficha no encontrada', 'Plantilla no encontrada para este sistema de rol'].includes(message) ? 404 : 500;
+      res.status(status).json({ error: message });
+    }
+  },
 };
