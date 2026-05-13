@@ -118,6 +118,7 @@ model CampoValor {
   id_ficha           Int
   id_campo_plantilla Int
   id_item_valor      Int?
+  valor              Json?
   ficha              FichaPersonaje @relation(fields: [id_ficha], references: [id_ficha])
   campo_plantilla    CampoPlantilla @relation(fields: [id_campo_plantilla], references: [id_campo_plantilla])
   item_valor         Item?          @relation(fields: [id_item_valor], references: [id_item])
