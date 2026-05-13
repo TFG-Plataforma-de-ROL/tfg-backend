@@ -41,6 +41,18 @@ export const usuarioService = {
     });
   },
 
+  async updateEmail(userId: number, email: string) {
+    const exists = await prisma.usuario.findFirst({
+      where: { email, NOT: { id_usuario: userId } },
+    })
+    if (exists) throw new Error('Ese email ya está en uso')
+    return prisma.usuario.update({
+      where: { id_usuario: userId },
+      data: { email },
+      select: { id_usuario: true, nombre: true, email: true, created_at: true },
+    })
+  },
+
   async updatePassword(userId: number, currentPassword: string, newPassword: string) {
     const usuario = await prisma.usuario.findUnique({ where: { id_usuario: userId } });
     if (!usuario) throw new Error('Usuario no encontrado');
