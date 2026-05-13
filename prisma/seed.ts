@@ -23,7 +23,7 @@ async function main() {
         id_sistema_rol: dnd.id_sistema_rol,
         tipo_item: 'raza',
         nombre,
-        todos_datos: {},
+        todos_datos: { tamaño: 'Mediano' },
       },
     })
   }
@@ -95,7 +95,7 @@ async function main() {
       create: {
         id_plantilla: plantilla.id_plantilla,
         nombre_campo: c.nombre_campo,
-        id_item_tipo: c.id_item_tipo,
+        id_item_tipo: c.id_item_tipo ?? undefined,
       },
     })
   }
