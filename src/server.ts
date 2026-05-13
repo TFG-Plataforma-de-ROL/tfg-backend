@@ -3,6 +3,7 @@ import 'dotenv/config';
 import express, { Express, Request, Response } from 'express';
 import cors from 'cors';
 import authRoutes from './routes/authRoutes.js';
+import usuarioRoutes from './routes/usuarioRoutes.js';
 import personajeRoutes from './routes/personajeRoutes.js';
 import sistemaRolRoutes from './routes/sistemaRolRoutes.js';
 import fichaRoutes from './routes/fichaRoutes.js';
@@ -20,6 +21,7 @@ app.get('/api/health', (_req: Request, res: Response) => {
 });
 
 app.use('/api/auth', authRoutes);
+app.use('/api/usuarios', usuarioRoutes);
 app.use('/api/personajes', personajeRoutes);
 app.use('/api/sistemas-rol', sistemaRolRoutes);
 app.use('/api/personajes/:personajeId/fichas', fichaRoutes);

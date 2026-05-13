@@ -3,6 +3,7 @@ import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 import authRoutes from './routes/authRoutes.js';
+import usuarioRoutes from './routes/usuarioRoutes.js';
 import personajeRoutes from './routes/personajeRoutes.js';
 import sistemaRolRoutes from './routes/sistemaRolRoutes.js';
 import fichaRoutes from './routes/fichaRoutes.js';
@@ -16,6 +17,7 @@ app.get('/api/health', (_req, res) => {
     res.json({ status: 'OK', message: 'Backend funcionando!' });
 });
 app.use('/api/auth', authRoutes);
+app.use('/api/usuarios', usuarioRoutes);
 app.use('/api/personajes', personajeRoutes);
 app.use('/api/sistemas-rol', sistemaRolRoutes);
 app.use('/api/personajes/:personajeId/fichas', fichaRoutes);
