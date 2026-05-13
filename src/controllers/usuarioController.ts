@@ -27,6 +27,19 @@ export const usuarioController = {
     }
   },
 
+  async updateAvatar(req: Request, res: Response): Promise<void> {
+    try {
+      if (!req.user) { res.status(401).json({ error: 'No autorizado' }); return; }
+      if (!req.file) { res.status(400).json({ error: 'No se ha enviado ninguna imagen' }); return; }
+      const avatarUrl = `/uploads/avatars/${req.file.filename}`;
+      const result = await usuarioService.updateAvatar(req.user.id, avatarUrl);
+      res.json(result);
+    } catch (error: unknown) {
+      const message = error instanceof Error ? error.message : 'Error inesperado';
+      res.status(500).json({ error: message });
+    }
+  },
+
   async updatePassword(req: Request, res: Response): Promise<void> {
     try {
       if (!req.user) { res.status(401).json({ error: 'No autorizado' }); return; }

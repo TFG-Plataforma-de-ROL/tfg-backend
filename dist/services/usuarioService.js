@@ -8,6 +8,7 @@ export const usuarioService = {
                 id_usuario: true,
                 nombre: true,
                 email: true,
+                avatar_url: true,
                 is_admin: true,
                 created_at: true,
                 personajes: {
@@ -27,6 +28,13 @@ export const usuarioService = {
             where: { id_usuario: userId },
             data: { nombre },
             select: { id_usuario: true, nombre: true, email: true, created_at: true },
+        });
+    },
+    async updateAvatar(userId, avatarUrl) {
+        return prisma.usuario.update({
+            where: { id_usuario: userId },
+            data: { avatar_url: avatarUrl },
+            select: { id_usuario: true, avatar_url: true },
         });
     },
     async updatePassword(userId, currentPassword, newPassword) {

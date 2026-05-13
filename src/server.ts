@@ -2,6 +2,7 @@
 import 'dotenv/config';
 import express, { Express, Request, Response } from 'express';
 import cors from 'cors';
+import path from 'path';
 import authRoutes from './routes/authRoutes.js';
 import usuarioRoutes from './routes/usuarioRoutes.js';
 import personajeRoutes from './routes/personajeRoutes.js';
@@ -15,6 +16,7 @@ const PORT = Number(process.env.PORT) || 3001;
 
 app.use(cors());
 app.use(express.json());
+app.use('/uploads', express.static(path.join(process.cwd(), 'uploads')));
 
 app.get('/api/health', (_req: Request, res: Response) => {
   res.json({ status: 'OK', message: 'Backend funcionando!' });
