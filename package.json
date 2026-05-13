@@ -5,7 +5,7 @@
   "main": "src/server.ts",
   "scripts": {
     "start": "node dist/server.js",
-    "dev": "ts-node --esm --watch src/server.ts",
+    "dev": "tsx watch src/server.ts",
     "build": "tsc",
     "lint": "eslint src --ext .ts",
     "lint:fix": "eslint src --ext .ts --fix",
@@ -44,6 +44,7 @@
     "prettier": "^3.8.1",
     "prisma": "^7.6.0",
     "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
     "typescript": "^6.0.2"
   }
 }
