@@ -1,15 +1,13 @@
 // src/server.ts
+import 'dotenv/config';
 import express, { Express, Request, Response } from 'express';
 import cors from 'cors';
-import dotenv from 'dotenv';
 import authRoutes from './routes/authRoutes.js';
 import personajeRoutes from './routes/personajeRoutes.js';
 import sistemaRolRoutes from './routes/sistemaRolRoutes.js';
 import fichaRoutes from './routes/fichaRoutes.js';
 import itemRoutes from './routes/itemRoutes.js';
 import plantillaRoutes from './routes/plantillaRoutes.js';
-
-dotenv.config();
 
 const app: Express = express();
 const PORT = Number(process.env.PORT) || 3001;

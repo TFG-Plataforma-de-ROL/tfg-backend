@@ -1,25 +1,27 @@
 // src/server.ts
+import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
-import dotenv from 'dotenv';
 import authRoutes from './routes/authRoutes.js';
-import tareaRoutes from './routes/tareaRoutes.js';
-dotenv.config();
+import personajeRoutes from './routes/personajeRoutes.js';
+import sistemaRolRoutes from './routes/sistemaRolRoutes.js';
+import fichaRoutes from './routes/fichaRoutes.js';
+import itemRoutes from './routes/itemRoutes.js';
+import plantillaRoutes from './routes/plantillaRoutes.js';
 const app = express();
 const PORT = Number(process.env.PORT) || 3001;
-// Middleware
 app.use(cors());
 app.use(express.json());
-// Health check
-app.get('/api/health', (req, res) => {
+app.get('/api/health', (_req, res) => {
     res.json({ status: 'OK', message: 'Backend funcionando!' });
 });
-// Routes
 app.use('/api/auth', authRoutes);
-app.use('/api/tareas', tareaRoutes);
-// Start server
+app.use('/api/personajes', personajeRoutes);
+app.use('/api/sistemas-rol', sistemaRolRoutes);
+app.use('/api/personajes/:personajeId/fichas', fichaRoutes);
+app.use('/api/items', itemRoutes);
+app.use('/api/plantillas', plantillaRoutes);
 app.listen(PORT, '0.0.0.0', () => {
-    console.log(`✅ Servidor backend en http://0.0.0.0:${PORT}`);
-    console.log(`📝 Base de datos: ${process.env.DATABASE_URL}`);
+    console.log(`Servidor backend en http://0.0.0.0:${PORT}`);
 });
 //# sourceMappingURL=server.js.map

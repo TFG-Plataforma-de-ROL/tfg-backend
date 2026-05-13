@@ -11,7 +11,8 @@ export const authController = {
             res.status(201).json({ user: result.usuario, token: result.token });
         }
         catch (error) {
-            res.status(400).json({ error: error.message });
+            const message = error instanceof Error ? error.message : 'Error inesperado';
+            res.status(400).json({ error: message });
         }
     },
     async login(req, res) {
@@ -25,7 +26,8 @@ export const authController = {
             res.json({ user: result.usuario, token: result.token });
         }
         catch (error) {
-            res.status(401).json({ error: error.message });
+            const message = error instanceof Error ? error.message : 'Error inesperado';
+            res.status(401).json({ error: message });
         }
     },
     async logout(req, res) {
