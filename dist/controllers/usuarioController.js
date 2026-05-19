@@ -56,6 +56,30 @@ export const usuarioController = {
             res.status(500).json({ error: message });
         }
     },
+    async updateEmail(req, res) {
+        try {
+            if (!req.user) {
+                res.status(401).json({ error: 'No autorizado' });
+                return;
+            }
+            const { email } = req.body;
+            if (!email?.trim()) {
+                res.status(400).json({ error: 'El email es obligatorio' });
+                return;
+            }
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email.trim())) {
+                res.status(400).json({ error: 'Email no válido' });
+                return;
+            }
+            const usuario = await usuarioService.updateEmail(req.user.id, email.trim());
+            res.json(usuario);
+        }
+        catch (error) {
+            const message = error instanceof Error ? error.message : 'Error inesperado';
+            res.status(400).json({ error: message });
+        }
+    },
     async updatePassword(req, res) {
         try {
             if (!req.user) {
