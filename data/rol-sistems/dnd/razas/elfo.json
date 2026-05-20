@@ -1,0 +1,29 @@
+{
+  "especie": {
+    "nombre": "Elfo",
+    "tamaño": "Mediano",
+    "velocidad": 30,
+    "rasgos": [
+      {
+        "nombre": "Visión en la oscuridad",
+        "descripcion": "Tienes Visión en la oscuridad con un alcance de 60 pies."
+      },
+      {
+        "nombre": "Linaje élfico",
+        "descripcion": "Eres parte de un linaje que te otorga habilidades sobrenaturales. Elige un linaje de la tabla de Linajes élficos: Drow (Visión en la oscuridad de 120 pies y truco Luces danzarinas; conjuros Fuego de hada y Oscuridad), Alto elfo (truco Prestidigitación; conjuros Detectar magia y Paso brumoso), Elfo del bosque (Velocidad 35 pies y truco Artesanía druídica; conjuros Paso largo y Pasar sin dejar rastro). La Inteligencia, Sabiduría o Carisma es tu característica de lanzamiento de conjuros para estos conjuros."
+      },
+      {
+        "nombre": "Ascendencia feérica",
+        "descripcion": "Tienes Ventaja en las tiradas de salvación que haces para evitar o terminar con la condición Hechizado."
+      },
+      {
+        "nombre": "Sentidos agudos",
+        "descripcion": "Tienes competencia en la habilidad Perspicacia, Percepción o Supervivencia."
+      },
+      {
+        "nombre": "Trance",
+        "descripcion": "No necesitas dormir, y la magia no puede dormirte. Puedes terminar un Descanso largo en 4 horas si pasas esas horas en una meditación semejante a un trance, durante la cual mantienes la consciencia."
+      }
+    ]
+  }
+}

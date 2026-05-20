@@ -1,0 +1,110 @@
+{
+  "clase": {
+    "nombre": "Guerrero",
+    "vida": {
+      "dado": "d10",
+      "nivel_1": 10,
+      "subsecuentes": "1d10 + modificador de Constitución"
+    },
+    "competencias": {
+      "armaduras": ["Armadura ligera", "Armadura media", "Armadura pesada", "Escudos"],
+      "armas": ["Armas sencillas", "Armas marciales"],
+      "herramientas": [],
+      "salvaciones": ["Fuerza", "Constitución"],
+      "habilidades": {
+        "elige": 2,
+        "de": ["Acrobacias", "Adiestramiento animal", "Atletismo", "Historia", "Intimidación", "Perspicacia", "Persuasión", "Percepción", "Supervivencia"]
+      }
+    },
+    "bono_competencia": {
+      "1-4": 2, "5-8": 3, "9-12": 4, "13-16": 5, "17-20": 6
+    },
+    "equipamiento_inicial": {
+      "a": ["Cota de malla", "Espadón", "Mangual", "8 jabalinas", "Mochila de mazmorrero", "4 po"],
+      "b": ["Armadura de cuero tachonado", "Cimitarra", "Espada corta", "Arco largo", "20 flechas", "Carcaj", "Mochila de mazmorrero", "11 po"],
+      "c": ["155 po"]
+    },
+    "rasgos": {
+      "1": [
+        {
+          "nombre": "Estilo de combate",
+          "descripcion": "Obtienes un talento de Estilo de combate a tu elección (ver capítulo 5). Se recomienda Defensa. Siempre que ganes un nivel de Guerrero, puedes sustituir el talento elegido por otro talento de Estilo de combate diferente."
+        },
+        {
+          "nombre": "Segundo aliento",
+          "descripcion": "Tienes una reserva limitada de aguante físico y mental de la que puedes nutrirse. Como Acción adicional, puedes usarla para recuperar puntos de golpe iguales a 1d10 más tu nivel de Guerrero. Puedes usar este rasgo dos veces. Recuperas un uso gastado cuando terminas un Descanso corto, y recuperas todos los usos gastados cuando terminas un Descanso largo."
+        },
+        {
+          "nombre": "Maestría con armas",
+          "descripcion": "Tu entrenamiento con armas te permite usar las propiedades de maestría de tres tipos de armas sencillas o marciales a tu elección. Siempre que termines un Descanso largo, puedes practicar ejercicios con armas y cambiar una de esas elecciones de arma."
+        }
+      ],
+      "2": [
+        {
+          "nombre": "Oleada de acción",
+          "descripcion": "Puedes empujarte más allá de tus límites normales por un momento. En tu turno, puedes tomar una acción adicional, excepto la acción Magia. Una vez que usas este rasgo, no puedes hacerlo de nuevo hasta que termines un Descanso corto o largo. A partir del nivel 17, puedes usarlo dos veces antes de un descanso, pero solo una vez en un turno."
+        },
+        {
+          "nombre": "Mente táctica",
+          "descripcion": "Tienes una mente para la táctica dentro y fuera del campo de batalla. Cuando fallas una prueba de característica, puedes gastar un uso de tu Segundo aliento para impulsarte hacia el éxito. En lugar de recuperar puntos de golpe, lanzas 1d10 y añades el número obtenido a la prueba de característica, convirtiendo potencialmente el fracaso en éxito."
+        }
+      ],
+      "3": [
+        {
+          "nombre": "Subclase de Guerrero",
+          "descripcion": "Obtienes una subclase de Guerrero a tu elección: Maestro de batalla, Campeón, Caballero Eldritch o Guerrero Psi. La subclase es una especialización que te otorga rasgos en ciertos niveles de Guerrero."
+        }
+      ],
+      "4": [
+        {
+          "nombre": "Mejora de puntuación de característica",
+          "descripcion": "Obtienes el talento Mejora de puntuación de característica u otro talento a tu elección para el que reúnas los requisitos. Obtienes este rasgo de nuevo en los niveles de Guerrero 6, 8, 12, 14 y 16."
+        }
+      ],
+      "5": [
+        {
+          "nombre": "Ataque adicional",
+          "descripcion": "Puedes atacar dos veces en lugar de una siempre que realices la acción de Atacar en tu turno."
+        },
+        {
+          "nombre": "Desplazamiento táctico",
+          "descripcion": "Siempre que actives tu Segundo aliento con una Acción adicional, puedes moverte hasta la mitad de tu Velocidad sin provocar Ataques de oportunidad."
+        }
+      ],
+      "9": [
+        {
+          "nombre": "Indomable",
+          "descripcion": "Si fallas una tirada de salvación, puedes volver a lanzarla con un bonificador igual a tu nivel de Guerrero. Debes usar el nuevo resultado, y no puedes usar este rasgo de nuevo hasta que termines un Descanso largo. Puedes usarlo dos veces antes de un Descanso largo a partir del nivel 13 y tres veces a partir del nivel 17."
+        },
+        {
+          "nombre": "Maestro táctico",
+          "descripcion": "Cuando atacas con un arma cuya propiedad de maestría puedes usar, puedes sustituir esa propiedad por la propiedad Empujar, Debilitar o Ralentizar para ese ataque."
+        }
+      ],
+      "11": [
+        {
+          "nombre": "Dos ataques adicionales",
+          "descripcion": "Puedes atacar tres veces en lugar de una siempre que realices la acción de Atacar en tu turno."
+        }
+      ],
+      "13": [
+        {
+          "nombre": "Ataques estudiados",
+          "descripcion": "Estudias a tus oponentes y aprendes de cada ataque que realizas. Si haces una tirada de ataque contra una criatura y fallas, tienes Ventaja en tu siguiente tirada de ataque contra esa criatura antes del final de tu siguiente turno."
+        }
+      ],
+      "19": [
+        {
+          "nombre": "Don épico",
+          "descripcion": "Obtienes un talento de Don épico u otro talento a tu elección para el que reúnas los requisitos. Se recomienda Don de Proeza de combate."
+        }
+      ],
+      "20": [
+        {
+          "nombre": "Tres ataques adicionales",
+          "descripcion": "Puedes atacar cuatro veces en lugar de una siempre que realices la acción de Atacar en tu turno."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "especie": {
+    "nombre": "Mediano",
+    "tamaño": "Pequeño",
+    "velocidad": 30,
+    "rasgos": [
+      {
+        "nombre": "Valiente",
+        "descripcion": "Tienes Ventaja en las tiradas de salvación que haces para evitar o terminar con la condición Asustado."
+      },
+      {
+        "nombre": "Agilidad mediana",
+        "descripcion": "Puedes moverte a través del espacio de cualquier criatura que sea un tamaño mayor que tú, pero no puedes detenerte en el mismo espacio."
+      },
+      {
+        "nombre": "Suerte",
+        "descripcion": "Cuando sacas un 1 en el d20 de una Prueba d20, puedes volver a tirar el dado, y debes usar el nuevo resultado."
+      },
+      {
+        "nombre": "Naturalmente sigiloso",
+        "descripcion": "Puedes tomar la acción de Esconderse incluso cuando solo estés oculto por una criatura que sea al menos un tamaño mayor que tú."
+      }
+    ]
+  }
+}

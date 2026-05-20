@@ -1,0 +1,25 @@
+{
+  "especie": {
+    "nombre": "Enano",
+    "tamaño": "Mediano",
+    "velocidad": 30,
+    "rasgos": [
+      {
+        "nombre": "Visión en la oscuridad",
+        "descripcion": "Tienes Visión en la oscuridad con un alcance de 120 pies."
+      },
+      {
+        "nombre": "Resistencia enana",
+        "descripcion": "Tienes Resistencia al daño de Veneno. También tienes Ventaja en las tiradas de salvación que haces para evitar o terminar con la condición Envenenado."
+      },
+      {
+        "nombre": "Dureza enana",
+        "descripcion": "Tu máximo de Puntos de golpe aumenta en 1, y aumenta en 1 de nuevo cada vez que ganas un nivel."
+      },
+      {
+        "nombre": "Sentido de la piedra",
+        "descripcion": "Como Acción adicional, ganas Temblosentido con un alcance de 60 pies durante 10 minutos. Debes estar sobre una superficie de piedra o tocando una superficie de piedra para usar este Temblosentido. La piedra puede ser natural o trabajada. Puedes usar esta Acción adicional un número de veces igual a tu Bonificador de competencia, y recuperas todos los usos gastados cuando terminas un Descanso largo."
+      }
+    ]
+  }
+}

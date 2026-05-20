@@ -1,0 +1,39 @@
+{
+  "trasfondo": {
+    "nombre": "Criminal",
+    "competencias_habilidad": ["Juego de manos", "Sigilo"],
+    "competencias_herramienta": ["Herramientas de ladrón"],
+    "idiomas": 0,
+    "equipo": [
+      "2 dagas",
+      "Herramientas de ladrón",
+      "Palanca",
+      "2 bolsas",
+      "Ropa de viajero",
+      "16 po"
+    ],
+    "dote": "Alerta",
+    "rasgos_personalidad": [
+      "Siempre tengo un plan para cuando las cosas van mal.",
+      "Soy siempre tranquilo, sin importar la situación. Nunca levanto la voz ni dejo que mis emociones me controlen.",
+      "El primero en actuar es el primero en sobrevivir.",
+      "Soy increíblemente lento para confiar. Quienes parecen más justos a menudo tienen algo que ocultar."
+    ],
+    "ideales": [
+      "Honor: No robo a otros del oficio. Solo a los que no pueden defenderse.",
+      "Libertad: Las cadenas son para ser rotas, igual que quienes intentan encadenar a los demás.",
+      "Codicia: Solo me importa el dinero.",
+      "Redención: Hay una chispa de bien en todos, incluso en mí."
+    ],
+    "vinculos": [
+      "Haré pagar a quien me la haya jugado.",
+      "Robé algo muy valioso de alguien que no merecía tenerlo.",
+      "Alguien que quiero está en peligro a causa de mis acciones pasadas."
+    ],
+    "defectos": [
+      "Cuando veo algo valioso, no puedo pensar en otra cosa que en cómo robarlo.",
+      "Huyo cuando las cosas van mal.",
+      "Una persona en particular sabe mis secretos y los usa en mi contra."
+    ]
+  }
+}

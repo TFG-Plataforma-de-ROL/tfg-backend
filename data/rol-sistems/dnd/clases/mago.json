@@ -1,0 +1,85 @@
+{
+  "clase": {
+    "nombre": "Mago",
+    "vida": {
+      "dado": "d6",
+      "nivel_1": 6,
+      "subsecuentes": "1d6 + modificador de Constitución"
+    },
+    "competencias": {
+      "armaduras": [],
+      "armas": ["Armas sencillas"],
+      "herramientas": [],
+      "salvaciones": ["Inteligencia", "Sabiduría"],
+      "habilidades": {
+        "elige": 2,
+        "de": ["Arcanos", "Historia", "Perspicacia", "Investigación", "Medicina", "Naturaleza", "Religión"]
+      }
+    },
+    "bono_competencia": {
+      "1-4": 2, "5-8": 3, "9-12": 4, "13-16": 5, "17-20": 6
+    },
+    "equipamiento_inicial": {
+      "a": ["2 dagas", "Foco arcano (bastón de mago)", "Túnica", "Libro de conjuros", "Mochila de estudioso", "5 po"],
+      "b": ["55 po"]
+    },
+    "rasgos": {
+      "1": [
+        {
+          "nombre": "Lanzamiento de conjuros",
+          "descripcion": "Como estudiante de la magia arcana, has aprendido a lanzar conjuros. Conoces tres trucos de mago a tu elección. El libro de conjuros contiene los conjuros de nivel 1 o superior que conoces, empezando con seis conjuros de mago de nivel 1 a tu elección. La Inteligencia es tu característica de lanzamiento de conjuros para tus conjuros de mago. Puedes usar un Foco arcano o tu libro de conjuros como foco de lanzamiento de conjuros."
+        },
+        {
+          "nombre": "Adepto ritual",
+          "descripcion": "Puedes lanzar cualquier conjuro como Ritual si ese conjuro tiene la etiqueta Ritual y el conjuro está en tu libro de conjuros. No necesitas tener el conjuro preparado, pero debes leer del libro para lanzarlo de esta forma."
+        },
+        {
+          "nombre": "Recuperación arcana",
+          "descripcion": "Puedes recuperar algo de tu energía mágica estudiando tu libro de conjuros. Cuando terminas un Descanso corto, puedes elegir casillas de conjuro gastadas para recuperarlas. Las casillas de conjuro pueden tener un nivel combinado igual o inferior a la mitad de tu nivel de Mago (redondeando hacia arriba), y ninguna de las casillas puede ser de nivel 6 o superior."
+        }
+      ],
+      "2": [
+        {
+          "nombre": "Estudioso",
+          "descripcion": "Mientras estudiabas magia, también te especializaste en otro campo de estudio. Elige una de las siguientes habilidades en las que tengas competencia: Arcanos, Historia, Investigación, Medicina, Naturaleza o Religión. Tienes Pericia en la habilidad elegida."
+        }
+      ],
+      "3": [
+        {
+          "nombre": "Subclase de Mago",
+          "descripcion": "Obtienes una subclase de Mago a tu elección: Abjurador, Adivino, Evocador o Ilusionista. La subclase es una especialización que te otorga rasgos en ciertos niveles de Mago."
+        }
+      ],
+      "4": [
+        {
+          "nombre": "Mejora de puntuación de característica",
+          "descripcion": "Obtienes el talento Mejora de puntuación de característica u otro talento a tu elección para el que reúnas los requisitos. Obtienes este rasgo de nuevo en los niveles de Mago 8, 12 y 16."
+        }
+      ],
+      "5": [
+        {
+          "nombre": "Memorizar conjuro",
+          "descripcion": "Siempre que termines un Descanso corto, puedes estudiar tu libro de conjuros y reemplazar uno de los conjuros de nivel 1 o superior que tienes preparados con otro conjuro de nivel 1 o superior del libro."
+        }
+      ],
+      "18": [
+        {
+          "nombre": "Maestría en conjuros",
+          "descripcion": "Has alcanzado tal maestría con ciertos conjuros que puedes lanzarlos a voluntad. Elige un conjuro de nivel 1 y uno de nivel 2 de tu libro de conjuros que tengan un tiempo de lanzamiento de una acción. Siempre tienes esos conjuros preparados, y puedes lanzarlos a su nivel más bajo sin gastar una casilla de conjuro. Siempre que termines un Descanso largo, puedes estudiar tu libro y reemplazar uno de esos conjuros por otro elegible del mismo nivel."
+        }
+      ],
+      "19": [
+        {
+          "nombre": "Don épico",
+          "descripcion": "Obtienes un talento de Don épico u otro talento a tu elección para el que reúnas los requisitos. Se recomienda Don de Recuerdo de conjuro."
+        }
+      ],
+      "20": [
+        {
+          "nombre": "Conjuros sello",
+          "descripcion": "Elige dos conjuros de nivel 3 de tu libro de conjuros como tus conjuros sello. Siempre tienes esos conjuros preparados, y puedes lanzar cada uno de ellos una vez a nivel 3 sin gastar una casilla de conjuro. Cuando lo hagas, no puedes volver a lanzarlos de esta forma hasta que termines un Descanso corto o largo."
+        }
+      ]
+    }
+  }
+}

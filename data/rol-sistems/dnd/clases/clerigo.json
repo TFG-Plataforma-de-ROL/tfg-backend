@@ -1,0 +1,93 @@
+{
+  "clase": {
+    "nombre": "Clérigo",
+    "vida": {
+      "dado": "d8",
+      "nivel_1": 8,
+      "subsecuentes": "1d8 + modificador de Constitución"
+    },
+    "competencias": {
+      "armaduras": ["Armadura ligera", "Armadura media", "Escudos"],
+      "armas": ["Armas sencillas"],
+      "herramientas": [],
+      "salvaciones": ["Sabiduría", "Carisma"],
+      "habilidades": {
+        "elige": 2,
+        "de": ["Historia", "Perspicacia", "Medicina", "Persuasión", "Religión"]
+      }
+    },
+    "bono_competencia": {
+      "1-4": 2, "5-8": 3, "9-12": 4, "13-16": 5, "17-20": 6
+    },
+    "equipamiento_inicial": {
+      "a": ["Camisola de malla", "Escudo", "Maza", "Símbolo sagrado", "Bolsa de sacerdote", "7 po"],
+      "b": ["110 po"]
+    },
+    "rasgos": {
+      "1": [
+        {
+          "nombre": "Lanzamiento de conjuros",
+          "descripcion": "Has aprendido a lanzar conjuros mediante la oración y la meditación. Conoces tres trucos a tu elección de la lista de conjuros del Clérigo. La Sabiduría es tu característica de lanzamiento de conjuros para tus conjuros de Clérigo. Puedes usar un Símbolo sagrado como foco de lanzamiento de conjuros para tus conjuros de Clérigo."
+        },
+        {
+          "nombre": "Orden divina",
+          "descripcion": "Te has dedicado a uno de los siguientes roles sagrados a tu elección. Protector: entrenado para la batalla, obtienes competencia con armas marciales y entrenamiento con armadura pesada. Taumaturgo: conoces un truco adicional de la lista del Clérigo y obtienes un bonificador a tus pruebas de Inteligencia (Arcanos o Religión) igual a tu modificador de Sabiduría (mínimo +1)."
+        }
+      ],
+      "2": [
+        {
+          "nombre": "Canalizar divinidad",
+          "descripcion": "Puedes canalizar energía divina directamente desde los Planos Exteriores para potenciar efectos mágicos. Comienzas con dos efectos: Chispa divina y Ahuyentar muertos vivientes. Puedes usar este rasgo dos veces. Recuperas un uso gastado cuando terminas un Descanso corto, y recuperas todos los usos gastados cuando terminas un Descanso largo."
+        }
+      ],
+      "3": [
+        {
+          "nombre": "Subclase de Clérigo",
+          "descripcion": "Obtienes una subclase de Clérigo a tu elección: Dominio de Vida, Dominio de Luz, Dominio de Engaño o Dominio de Guerra. La subclase es una especialización que te otorga rasgos en ciertos niveles de Clérigo."
+        }
+      ],
+      "4": [
+        {
+          "nombre": "Mejora de puntuación de característica",
+          "descripcion": "Obtienes el talento Mejora de puntuación de característica u otro talento a tu elección para el que reúnas los requisitos. Obtienes este rasgo de nuevo en los niveles de Clérigo 8, 12 y 16."
+        }
+      ],
+      "5": [
+        {
+          "nombre": "Chamuscar muertos vivientes",
+          "descripcion": "Siempre que uses Ahuyentar muertos vivientes, puedes lanzar un número de d8s igual a tu modificador de Sabiduría (mínimo 1d8) y sumar los resultados. Cada muerto viviente que falle su tirada de salvación contra ese uso de Ahuyentar muertos vivientes recibe daño Radiante igual al total de la tirada."
+        }
+      ],
+      "7": [
+        {
+          "nombre": "Golpes bendecidos",
+          "descripcion": "El poder divino te impregna en la batalla. Obtienes una de las siguientes opciones a tu elección: Golpe divino (una vez en cada uno de tus turnos cuando impactas a una criatura con un ataque con arma, puedes hacer que el objetivo sufra 1d8 de daño Necrótico o Radiante adicional) o Lanzamiento potente (añade tu modificador de Sabiduría al daño que infliges con cualquier truco de Clérigo)."
+        }
+      ],
+      "10": [
+        {
+          "nombre": "Intervención divina",
+          "descripcion": "Puedes invocar a tu deidad para que intervenga en tu nombre. Como acción Mágica, elige cualquier conjuro de Clérigo de nivel 5 o inferior que no requiera una Reacción para lanzarse. Como parte de la misma acción, lanzas ese conjuro sin gastar una casilla de conjuro ni necesitar Componentes materiales. No puedes usar este rasgo de nuevo hasta que termines un Descanso largo."
+        }
+      ],
+      "14": [
+        {
+          "nombre": "Golpes bendecidos mejorados",
+          "descripcion": "La opción elegida para Golpes bendecidos se vuelve más poderosa. Golpe divino: el daño adicional de tu Golpe divino aumenta a 2d8. Lanzamiento potente: cuando lanzas un truco de Clérigo e infliges daño a una criatura con él, puedes dar vitalidad a ti mismo o a otra criatura a 18 metros de ti, otorgando Puntos de golpe temporales iguales al doble de tu modificador de Sabiduría."
+        }
+      ],
+      "19": [
+        {
+          "nombre": "Don épico",
+          "descripcion": "Obtienes un talento de Don épico u otro talento a tu elección para el que reúnas los requisitos. Se recomienda Don del Destino."
+        }
+      ],
+      "20": [
+        {
+          "nombre": "Gran intervención divina",
+          "descripcion": "Puedes invocar una intervención divina aún más poderosa. Cuando usas tu rasgo de Intervención divina, puedes elegir Deseo cuando seleccionas un conjuro. Si lo haces, no puedes usar Intervención divina de nuevo hasta que termines 2d4 Descansos largos."
+        }
+      ]
+    }
+  }
+}

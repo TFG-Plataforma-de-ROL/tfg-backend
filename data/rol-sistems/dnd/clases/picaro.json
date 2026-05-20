@@ -1,0 +1,125 @@
+{
+  "clase": {
+    "nombre": "Pícaro",
+    "vida": {
+      "dado": "d8",
+      "nivel_1": 8,
+      "subsecuentes": "1d8 + modificador de Constitución"
+    },
+    "competencias": {
+      "armaduras": ["Armadura ligera"],
+      "armas": ["Armas sencillas", "Armas marciales con la propiedad Sutil o Ligera"],
+      "herramientas": ["Herramientas de ladrón"],
+      "salvaciones": ["Destreza", "Inteligencia"],
+      "habilidades": {
+        "elige": 4,
+        "de": ["Acrobacias", "Atletismo", "Engaño", "Perspicacia", "Intimidación", "Investigación", "Percepción", "Persuasión", "Juego de manos", "Sigilo"]
+      }
+    },
+    "bono_competencia": {
+      "1-4": 2, "5-8": 3, "9-12": 4, "13-16": 5, "17-20": 6
+    },
+    "equipamiento_inicial": {
+      "a": ["Armadura de cuero", "2 dagas", "Espada corta", "Arco corto", "20 flechas", "Carcaj", "Herramientas de ladrón", "Mochila de ladrón", "8 po"],
+      "b": ["100 po"]
+    },
+    "rasgos": {
+      "1": [
+        {
+          "nombre": "Pericia",
+          "descripcion": "Obtienes Pericia en dos de tus competencias de habilidad a tu elección. Se recomiendan Juego de manos y Sigilo si tienes competencia en ellas. En el nivel 6 de Pícaro, obtienes Pericia en dos competencias de habilidad más a tu elección."
+        },
+        {
+          "nombre": "Ataque furtivo",
+          "descripcion": "Sabes cómo golpear sutilmente y explotar la distracción de un enemigo. Una vez por turno, puedes infligir 1d6 de daño adicional a una criatura que impactes con una tirada de ataque si tienes Ventaja en la tirada y el ataque usa un arma con la propiedad Sutil o un arma a distancia. No necesitas Ventaja si al menos un aliado tuyo está a 1,5 metros del objetivo, el aliado no tiene la condición Incapacitado, y tú no tienes Desventaja en la tirada. El daño adicional aumenta según muestran los niveles de Pícaro."
+        },
+        {
+          "nombre": "Jerga de ladrones",
+          "descripcion": "Has aprendido varios idiomas en las comunidades donde ejercitabas tus talentos de pícaro. Conoces Jerga de ladrones y otro idioma a tu elección."
+        },
+        {
+          "nombre": "Maestría con armas",
+          "descripcion": "Tu entrenamiento con armas te permite usar las propiedades de maestría de dos tipos de armas de tu elección con las que tengas competencia, como Dagas y Arcos cortos. Siempre que termines un Descanso largo, puedes cambiar los tipos de armas elegidos."
+        }
+      ],
+      "2": [
+        {
+          "nombre": "Acción astuta",
+          "descripcion": "Tu pensamiento rápido y agilidad te permiten moverte y actuar rápidamente. En tu turno, puedes realizar una de las siguientes acciones como Acción adicional: Correr, Separarse o Esconderse."
+        }
+      ],
+      "3": [
+        {
+          "nombre": "Subclase de Pícaro",
+          "descripcion": "Obtienes una subclase de Pícaro a tu elección: Tramposo arcano, Asesino, Portavoz o el Ladrón. La subclase es una especialización que te otorga rasgos en ciertos niveles de Pícaro."
+        },
+        {
+          "nombre": "Apuntar con calma",
+          "descripcion": "Como Acción adicional, te otorgas Ventaja en tu siguiente tirada de ataque en tu turno actual. Solo puedes usar este rasgo si no te has movido durante este turno, y tras usarlo tu Velocidad es 0 hasta el final del turno actual."
+        }
+      ],
+      "4": [
+        {
+          "nombre": "Mejora de puntuación de característica",
+          "descripcion": "Obtienes el talento Mejora de puntuación de característica u otro talento a tu elección para el que reúnas los requisitos. Obtienes este rasgo de nuevo en los niveles de Pícaro 8, 10, 12 y 16."
+        }
+      ],
+      "5": [
+        {
+          "nombre": "Golpe astuto",
+          "descripcion": "Has desarrollado formas astutas de usar tu Ataque furtivo. Cuando infliges daño de Ataque furtivo, puedes añadir uno de los siguientes efectos de Golpe astuto. Cada efecto tiene un coste en dados, que es el número de dados de Ataque furtivo que debes sacrificar. Veneno (Coste: 1d6), Derribar (Coste: 1d6), Retirada (Coste: 1d6)."
+        },
+        {
+          "nombre": "Esquiva imprevista",
+          "descripcion": "Cuando un atacante que puedes ver te impacta con una tirada de ataque, puedes tomar una Reacción para reducir a la mitad el daño del ataque contra ti (redondeando hacia abajo)."
+        }
+      ],
+      "7": [
+        {
+          "nombre": "Evasión",
+          "descripcion": "Puedes esquivar ágilmente para evitar ciertos peligros. Cuando estás sujeto a un efecto que te permite hacer una tirada de salvación de Destreza para sufrir solo la mitad del daño, en cambio no sufres daño si tienes éxito en la tirada y solo la mitad del daño si fallas."
+        },
+        {
+          "nombre": "Talento fiable",
+          "descripcion": "Siempre que hagas una prueba de característica que usa una de tus competencias de habilidad o herramienta, puedes tratar un resultado de d20 de 9 o inferior como un 10."
+        }
+      ],
+      "11": [
+        {
+          "nombre": "Golpe astuto mejorado",
+          "descripcion": "Puedes usar hasta dos efectos de Golpe astuto cuando infliges daño de Ataque furtivo, pagando el coste de dados por cada efecto."
+        }
+      ],
+      "14": [
+        {
+          "nombre": "Golpes pérfidos",
+          "descripcion": "Has practicado nuevas formas de usar tu Ataque furtivo con perfidia. Los siguientes efectos se añaden a tus opciones de Golpe astuto: Aturdir (Coste: 2d6), Noquear (Coste: 6d6), Cegar (Coste: 3d6)."
+        }
+      ],
+      "15": [
+        {
+          "nombre": "Mente escurridiza",
+          "descripcion": "Tu mente es excepcionalmente difícil de controlar. Obtienes competencia en tiradas de salvación de Sabiduría y Carisma."
+        }
+      ],
+      "18": [
+        {
+          "nombre": "Escurridizo",
+          "descripcion": "Eres tan evasivo que los atacantes rara vez logran ventaja sobre ti. Ninguna tirada de ataque puede tener Ventaja contra ti a menos que tengas la condición Incapacitado."
+        }
+      ],
+      "19": [
+        {
+          "nombre": "Don épico",
+          "descripcion": "Obtienes un talento de Don épico u otro talento a tu elección para el que reúnas los requisitos. Se recomienda Don del Espíritu nocturno."
+        }
+      ],
+      "20": [
+        {
+          "nombre": "Golpe de suerte",
+          "descripcion": "Tienes un talento maravilloso para tener éxito cuando lo necesitas. Si fallas una Prueba d20, puedes convertir la tirada en un 20. Una vez que usas este rasgo, no puedes usarlo de nuevo hasta que termines un Descanso corto o largo."
+        }
+      ]
+    }
+  }
+}

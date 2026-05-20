@@ -1,0 +1,39 @@
+{
+  "trasfondo": {
+    "nombre": "Acólito",
+    "competencias_habilidad": ["Perspicacia", "Religión"],
+    "competencias_herramienta": ["Útiles de calígrafo"],
+    "idiomas": 0,
+    "equipo": [
+      "Útiles de calígrafo",
+      "Libro (oraciones)",
+      "Símbolo sagrado",
+      "Pergamino (10 hojas)",
+      "Túnica",
+      "8 po"
+    ],
+    "dote": "Iniciado mágico (Clérigo)",
+    "rasgos_personalidad": [
+      "Idolatro a un héroe de mi fe y hago referencia constante a sus hechos y ejemplo.",
+      "Puedo encontrar terreno común entre los enemigos más feroces, empatizando con ellos y buscando siempre la paz.",
+      "Veo presagios en cada acontecimiento y acción. Los dioses intentan hablarnos; solo hay que escuchar.",
+      "Nada puede sacudir mi actitud optimista."
+    ],
+    "ideales": [
+      "Tradición: Las antiguas enseñanzas deben preservarse y propagarse.",
+      "Caridad: Siempre trato de ayudar a quienes lo necesitan, independientemente del coste personal.",
+      "Cambio: Los viejos caminos deben dejar paso a nuevas verdades.",
+      "Poder: Espero algún día ocupar la cúspide de la jerarquía de mi fe."
+    ],
+    "vinculos": [
+      "Moriría reivindicando mi templo de las garras de quienes lo profanaron.",
+      "Debo mi vida al sacerdote que me acogió cuando mis padres murieron.",
+      "Todo lo que hago es para el pueblo que sirvo."
+    ],
+    "defectos": [
+      "Soy inflexible en mi pensamiento.",
+      "Deposito demasiada confianza en quienes ostentan poder dentro de la jerarquía de mi templo.",
+      "Mi piedad a veces me lleva a confiar ciegamente en quienes profesan la misma fe."
+    ]
+  }
+}

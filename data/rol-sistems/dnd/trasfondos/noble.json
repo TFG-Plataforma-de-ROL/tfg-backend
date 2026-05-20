@@ -1,0 +1,37 @@
+{
+  "trasfondo": {
+    "nombre": "Noble",
+    "competencias_habilidad": ["Historia", "Persuasión"],
+    "competencias_herramienta": ["Un tipo de juego de mesa a elegir"],
+    "idiomas": 0,
+    "equipo": [
+      "Juego de mesa (el mismo que el de arriba)",
+      "Ropa fina",
+      "Perfume",
+      "29 po"
+    ],
+    "dote": "Experto",
+    "rasgos_personalidad": [
+      "Mi elocuencia y halagos me hacen ganar fácilmente la confianza de los demás.",
+      "La gente común me aprecia por mi amabilidad y generosidad.",
+      "Soy perfectamente consciente de que no tengo ni idea de cómo es la vida real para quienes trabajan duro para sobrevivir.",
+      "Tengo dificultad para resistir un desafío a mi reputación."
+    ],
+    "ideales": [
+      "Respeto: El respeto me lo gano y se lo doy a quienes lo han ganado.",
+      "Responsabilidad: Es mi deber cuidar de quienes están bajo mi mando.",
+      "Independencia: Debo demostrar que puedo tener éxito por mis propios medios.",
+      "Poder: Si alcanzo suficiente poder, nadie podrá decirme qué hacer."
+    ],
+    "vinculos": [
+      "Volvería a casa si eso no significara reconocer que no puedo hacerlo solo.",
+      "Mi familia me ha dado todo. Debo proteger el honor familiar a toda costa.",
+      "Un noble rival humilló a mi familia y algún día haré que lo lamente."
+    ],
+    "defectos": [
+      "Estoy convencido de que todo el mundo está por debajo de mí.",
+      "Oculto un secreto oscuro y vergonzoso que podría arruinar la reputación de mi familia.",
+      "Frecuentemente desprecio a quienes considero inferiores."
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "especie": {
+    "nombre": "Humano",
+    "tamaño": "Mediano o Pequeño",
+    "velocidad": 30,
+    "rasgos": [
+      {
+        "nombre": "Ingenioso",
+        "descripcion": "Ganas Inspiración heroica siempre que termines un Descanso largo."
+      },
+      {
+        "nombre": "Habilidoso",
+        "descripcion": "Obtienes competencia en una habilidad a tu elección."
+      },
+      {
+        "nombre": "Versátil",
+        "descripcion": "Obtienes un talento de Origen a tu elección. Se recomienda Experto."
+      }
+    ]
+  }
+}
