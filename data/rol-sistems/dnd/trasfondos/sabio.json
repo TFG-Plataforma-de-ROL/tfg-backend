@@ -1,6 +1,7 @@
 {
   "trasfondo": {
     "nombre": "Sabio",
+    "mejora_caracteristicas": ["Constitución", "Inteligencia", "Sabiduría"],
     "competencias_habilidad": ["Arcanos", "Historia"],
     "competencias_herramienta": ["Útiles de calígrafo"],
     "idiomas": 0,
@@ -12,22 +13,6 @@
       "Túnica",
       "8 po"
     ],
-    "dote": "Iniciado mágico (Mago)",
-    "ideales": [
-      "Conocimiento: El camino hacia el poder y la autorrealización pasa por el conocimiento.",
-      "Belleza: Lo que es bello nos señala lo que es verdad.",
-      "Lógica: Las emociones no deben nublar nuestro pensamiento lógico.",
-      "Sin límites: Nada debe frenar el potencial ilimitado inherente a toda la creación."
-    ],
-    "vinculos": [
-      "Tengo un texto antiguo que contiene terribles secretos que no deben caer en las manos equivocadas.",
-      "Mi vida entera ha sido perseguir un hecho en particular que elude mi comprensión.",
-      "Mi mentor me enseñó todo lo que sé; busco hacer su legado perdurar."
-    ],
-    "defectos": [
-      "Digo sin pensar lo que tengo en mente, insultando a los demás sin darme cuenta.",
-      "No puedo guardar un secreto para salvar mi vida, ni la de nadie más.",
-      "Me cuesta aceptar que alguien sepa algo que yo no sé."
-    ]
+    "dote": "Iniciado mágico (Mago)"
   }
 }

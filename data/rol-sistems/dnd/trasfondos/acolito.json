@@ -1,6 +1,7 @@
 {
   "trasfondo": {
     "nombre": "Acólito",
+    "mejora_caracteristicas": ["Inteligencia", "Sabiduría", "Carisma"],
     "competencias_habilidad": ["Perspicacia", "Religión"],
     "competencias_herramienta": ["Útiles de calígrafo"],
     "idiomas": 0,
@@ -12,22 +13,6 @@
       "Túnica",
       "8 po"
     ],
-    "dote": "Iniciado mágico (Clérigo)",
-    "ideales": [
-      "Tradición: Las antiguas enseñanzas deben preservarse y propagarse.",
-      "Caridad: Siempre trato de ayudar a quienes lo necesitan, independientemente del coste personal.",
-      "Cambio: Los viejos caminos deben dejar paso a nuevas verdades.",
-      "Poder: Espero algún día ocupar la cúspide de la jerarquía de mi fe."
-    ],
-    "vinculos": [
-      "Moriría reivindicando mi templo de las garras de quienes lo profanaron.",
-      "Debo mi vida al sacerdote que me acogió cuando mis padres murieron.",
-      "Todo lo que hago es para el pueblo que sirvo."
-    ],
-    "defectos": [
-      "Soy inflexible en mi pensamiento.",
-      "Deposito demasiada confianza en quienes ostentan poder dentro de la jerarquía de mi templo.",
-      "Mi piedad a veces me lleva a confiar ciegamente en quienes profesan la misma fe."
-    ]
+    "dote": "Iniciado mágico (Clérigo)"
   }
 }
