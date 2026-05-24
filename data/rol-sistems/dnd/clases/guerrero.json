@@ -20,7 +20,7 @@
       "1-4": 2, "5-8": 3, "9-12": 4, "13-16": 5, "17-20": 6
     },
     "equipamiento_inicial": {
-      "a": ["Cota de malla", "Espadón", "Mangual", "8 jabalinas", "Mochila de mazmorrero", "4 po"],
+      "a": ["Cota de mallas", "Mandoble", "Mayal", "8 Jabalinas", "Mochila de mazmorrero", "4 po"],
       "b": ["Armadura de cuero tachonado", "Cimitarra", "Espada corta", "Arco largo", "20 flechas", "Carcaj", "Mochila de mazmorrero", "11 po"],
       "c": ["155 po"]
     },

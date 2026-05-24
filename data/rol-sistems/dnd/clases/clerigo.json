@@ -20,7 +20,7 @@
       "1-4": 2, "5-8": 3, "9-12": 4, "13-16": 5, "17-20": 6
     },
     "equipamiento_inicial": {
-      "a": ["Camisola de malla", "Escudo", "Maza", "Símbolo sagrado", "Bolsa de sacerdote", "7 po"],
+      "a": ["Camisote de mallas", "Escudo", "Maza", "Símbolo sagrado", "Bolsa de sacerdote", "7 po"],
       "b": ["110 po"]
     },
     "rasgos": {
