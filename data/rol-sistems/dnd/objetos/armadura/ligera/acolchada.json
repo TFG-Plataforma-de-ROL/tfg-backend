@@ -1,0 +1,13 @@
+{
+  "armadura": {
+    "nombre": "Armadura acolchada",
+    "nombre_original": "Padded Armor",
+    "categoria": "Armadura ligera",
+    "ca": "11 + modificador de Destreza",
+    "fuerza_minima": null,
+    "desventaja_sigilo": true,
+    "peso_lb": 8,
+    "coste": "5 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

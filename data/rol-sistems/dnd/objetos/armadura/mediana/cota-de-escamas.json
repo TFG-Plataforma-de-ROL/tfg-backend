@@ -1,0 +1,13 @@
+{
+  "armadura": {
+    "nombre": "Cota de escamas",
+    "nombre_original": "Scale Mail",
+    "categoria": "Armadura mediana",
+    "ca": "14 + modificador de Destreza (máximo +2)",
+    "fuerza_minima": null,
+    "desventaja_sigilo": true,
+    "peso_lb": 45,
+    "coste": "50 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

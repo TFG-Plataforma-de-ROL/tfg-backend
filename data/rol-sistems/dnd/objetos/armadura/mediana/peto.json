@@ -1,0 +1,13 @@
+{
+  "armadura": {
+    "nombre": "Peto",
+    "nombre_original": "Breastplate",
+    "categoria": "Armadura mediana",
+    "ca": "14 + modificador de Destreza (máximo +2)",
+    "fuerza_minima": null,
+    "desventaja_sigilo": false,
+    "peso_lb": 20,
+    "coste": "400 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

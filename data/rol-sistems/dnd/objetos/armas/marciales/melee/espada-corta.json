@@ -1,0 +1,14 @@
+{
+  "arma": {
+    "nombre": "Espada corta",
+    "nombre_original": "Shortsword",
+    "categoria": "Arma marcial de cuerpo a cuerpo",
+    "daño": "1d6",
+    "tipo_daño": "perforante",
+    "propiedades": ["Finura", "Ligera"],
+    "maestria": "Hostigar",
+    "peso_lb": 2,
+    "coste": "10 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

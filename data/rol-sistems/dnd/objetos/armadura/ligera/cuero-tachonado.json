@@ -1,0 +1,13 @@
+{
+  "armadura": {
+    "nombre": "Armadura de cuero tachonado",
+    "nombre_original": "Studded Leather Armor",
+    "categoria": "Armadura ligera",
+    "ca": "12 + modificador de Destreza",
+    "fuerza_minima": null,
+    "desventaja_sigilo": false,
+    "peso_lb": 13,
+    "coste": "45 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

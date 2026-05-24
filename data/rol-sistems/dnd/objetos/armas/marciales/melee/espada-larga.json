@@ -1,0 +1,14 @@
+{
+  "arma": {
+    "nombre": "Espada larga",
+    "nombre_original": "Longsword",
+    "categoria": "Arma marcial de cuerpo a cuerpo",
+    "daño": "1d8",
+    "tipo_daño": "cortante",
+    "propiedades": ["Versátil (1d10)"],
+    "maestria": "Aturdir",
+    "peso_lb": 3,
+    "coste": "15 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

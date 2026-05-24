@@ -1,0 +1,15 @@
+{
+  "arma": {
+    "nombre": "Lanza de caballería",
+    "nombre_original": "Lance",
+    "categoria": "Arma marcial de cuerpo a cuerpo",
+    "daño": "1d10",
+    "tipo_daño": "perforante",
+    "propiedades": ["Pesada", "Alcance", "Dos manos"],
+    "nota": "Puedes usar esta arma con una sola mano si estás montado.",
+    "maestria": "Derribar",
+    "peso_lb": 6,
+    "coste": "10 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

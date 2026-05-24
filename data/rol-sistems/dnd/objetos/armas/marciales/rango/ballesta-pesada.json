@@ -1,0 +1,14 @@
+{
+  "arma": {
+    "nombre": "Ballesta pesada",
+    "nombre_original": "Heavy Crossbow",
+    "categoria": "Arma marcial a distancia",
+    "daño": "1d10",
+    "tipo_daño": "perforante",
+    "propiedades": ["Munición (100/400)", "Pesada", "Carga", "Dos manos"],
+    "maestria": "Empujar",
+    "peso_lb": 18,
+    "coste": "50 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

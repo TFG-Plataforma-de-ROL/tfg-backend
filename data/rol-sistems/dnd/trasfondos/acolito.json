@@ -13,6 +13,9 @@
       "Túnica",
       "8 po"
     ],
-    "dote": "Iniciado mágico (Clérigo)"
+    "dote": {
+      "nombre": "Iniciado mágico (Clérigo)",
+      "descripcion": "Aprendes dos trucos de la lista de conjuros del Clérigo y un conjuro de nivel 1 de esa misma lista, que siempre tienes preparado. Puedes lanzarlo una vez sin espacio de conjuro por Descanso largo. Sabiduría es tu característica de lanzamiento para estos conjuros."
+    }
   }
 }

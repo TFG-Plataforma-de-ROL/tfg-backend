@@ -1,0 +1,13 @@
+{
+  "armadura": {
+    "nombre": "Armadura de tablillas",
+    "nombre_original": "Splint Armor",
+    "categoria": "Armadura pesada",
+    "ca": "17",
+    "fuerza_minima": 15,
+    "desventaja_sigilo": true,
+    "peso_lb": 60,
+    "coste": "200 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

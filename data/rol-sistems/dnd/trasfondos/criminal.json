@@ -13,6 +13,9 @@
       "Ropa de viajero",
       "16 po"
     ],
-    "dote": "Alerta"
+    "dote": {
+      "nombre": "Alerta",
+      "descripcion": "Siempre alerta al peligro, ganas los siguientes beneficios: cuando tiras Iniciativa, puedes añadir tu bonificador de competencia a la tirada; e inmediatamente después de tirar Iniciativa, puedes intercambiar tu resultado con el de un aliado dispuesto en el mismo combate (no si alguno tiene la condición Incapacitado)."
+    }
   }
 }

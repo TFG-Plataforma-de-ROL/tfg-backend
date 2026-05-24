@@ -1,0 +1,14 @@
+{
+  "arma": {
+    "nombre": "Arco largo",
+    "nombre_original": "Longbow",
+    "categoria": "Arma marcial a distancia",
+    "daño": "1d8",
+    "tipo_daño": "perforante",
+    "propiedades": ["Munición (150/600)", "Pesada", "Dos manos"],
+    "maestria": "Ralentizar",
+    "peso_lb": 2,
+    "coste": "50 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "arma": {
+    "nombre": "Ballesta ligera",
+    "nombre_original": "Light Crossbow",
+    "categoria": "Arma simple a distancia",
+    "daño": "1d8",
+    "tipo_daño": "perforante",
+    "propiedades": ["Munición (80/320)", "Carga", "Dos manos"],
+    "maestria": "Ralentizar",
+    "peso_lb": 5,
+    "coste": "25 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

@@ -11,6 +11,9 @@
       "Perfume",
       "29 po"
     ],
-    "dote": "Experto"
+    "dote": {
+      "nombre": "Experto",
+      "descripcion": "Ganas competencia en cualquier combinación de tres habilidades o herramientas a tu elección. Puedes tomar esta dote más de una vez."
+    }
   }
 }

@@ -1,0 +1,7 @@
+{
+  "propiedad": {
+    "nombre": "Arrojadiza",
+    "nombre_original": "Thrown",
+    "descripcion": "Puedes lanzar esta arma para realizar un ataque a distancia. Usas el mismo modificador de característica para la tirada de ataque y daño que usarías en un ataque cuerpo a cuerpo (generalmente Fuerza, salvo que el arma también tenga la propiedad Finura). El primer número es el alcance normal y el segundo el alcance máximo en pies."
+  }
+}

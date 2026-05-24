@@ -1,0 +1,14 @@
+{
+  "arma": {
+    "nombre": "Arco corto",
+    "nombre_original": "Shortbow",
+    "categoria": "Arma simple a distancia",
+    "daño": "1d6",
+    "tipo_daño": "perforante",
+    "propiedades": ["Munición (80/320)", "Dos manos"],
+    "maestria": "Hostigar",
+    "peso_lb": 2,
+    "coste": "25 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

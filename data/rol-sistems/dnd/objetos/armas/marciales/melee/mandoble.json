@@ -1,0 +1,14 @@
+{
+  "arma": {
+    "nombre": "Mandoble",
+    "nombre_original": "Greatsword",
+    "categoria": "Arma marcial de cuerpo a cuerpo",
+    "daño": "2d6",
+    "tipo_daño": "cortante",
+    "propiedades": ["Pesada", "Dos manos"],
+    "maestria": "Rozar",
+    "peso_lb": 6,
+    "coste": "50 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

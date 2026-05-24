@@ -1,0 +1,15 @@
+{
+  "arma": {
+    "nombre": "Red",
+    "nombre_original": "Net",
+    "categoria": "Arma marcial a distancia",
+    "daño": "—",
+    "tipo_daño": "—",
+    "propiedades": ["Arrojadiza (5/15)"],
+    "maestria": "Atrapar",
+    "nota": "No causa daño. Un impacto restringe a la criatura objetivo (Tamaño Grande o menor). La criatura puede usar su acción para hacer una prueba de Fuerza (CD 10) para liberarse. Infligir 5 de daño cortante a la red (CA 10) también libera a la criatura.",
+    "peso_lb": 3,
+    "coste": "1 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

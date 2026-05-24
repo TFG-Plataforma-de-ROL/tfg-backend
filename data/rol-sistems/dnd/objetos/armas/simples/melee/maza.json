@@ -1,0 +1,14 @@
+{
+  "arma": {
+    "nombre": "Maza",
+    "nombre_original": "Mace",
+    "categoria": "Arma simple de cuerpo a cuerpo",
+    "daño": "1d6",
+    "tipo_daño": "contundente",
+    "propiedades": [],
+    "maestria": "Aturdir",
+    "peso_lb": 4,
+    "coste": "5 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

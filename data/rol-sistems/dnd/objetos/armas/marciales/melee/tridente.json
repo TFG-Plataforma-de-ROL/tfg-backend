@@ -1,0 +1,14 @@
+{
+  "arma": {
+    "nombre": "Tridente",
+    "nombre_original": "Trident",
+    "categoria": "Arma marcial de cuerpo a cuerpo",
+    "daño": "1d8",
+    "tipo_daño": "perforante",
+    "propiedades": ["Arrojadiza (20/60)", "Versátil (1d10)"],
+    "maestria": "Derribar",
+    "peso_lb": 4,
+    "coste": "5 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

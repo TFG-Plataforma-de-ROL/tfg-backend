@@ -1,0 +1,14 @@
+{
+  "arma": {
+    "nombre": "Porra",
+    "nombre_original": "Club",
+    "categoria": "Arma simple de cuerpo a cuerpo",
+    "daño": "1d4",
+    "tipo_daño": "contundente",
+    "propiedades": ["Ligera"],
+    "maestria": "Ralentizar",
+    "peso_lb": 2,
+    "coste": "1 pp",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

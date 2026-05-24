@@ -1,0 +1,18 @@
+{
+  "sin_armadura": {
+    "nombre": "Defensa sin armadura",
+    "nombre_original": "Unarmored Defense",
+    "descripcion": "Cuando no llevas armadura, tu Clase de Armadura se calcula usando una fórmula especial determinada por tu clase. Al equipar un escudo, el bonificador de CA del escudo se añade igualmente.",
+    "variantes": [
+      {
+        "clase": "Bárbaro",
+        "formula": "10 + modificador de Destreza + modificador de Constitución"
+      },
+      {
+        "clase": "Monje",
+        "formula": "10 + modificador de Destreza + modificador de Sabiduría"
+      }
+    ],
+    "fuente": "Manual del Jugador 2024"
+  }
+}

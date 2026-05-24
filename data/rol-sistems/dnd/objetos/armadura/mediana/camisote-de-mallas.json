@@ -1,0 +1,13 @@
+{
+  "armadura": {
+    "nombre": "Camisote de mallas",
+    "nombre_original": "Chain Shirt",
+    "categoria": "Armadura mediana",
+    "ca": "13 + modificador de Destreza (máximo +2)",
+    "fuerza_minima": null,
+    "desventaja_sigilo": false,
+    "peso_lb": 20,
+    "coste": "50 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "arma": {
+    "nombre": "Cerbatana",
+    "nombre_original": "Blowgun",
+    "categoria": "Arma marcial a distancia",
+    "daño": "1",
+    "tipo_daño": "perforante",
+    "propiedades": ["Munición (25/100)", "Carga"],
+    "maestria": "Hostigar",
+    "peso_lb": 1,
+    "coste": "10 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

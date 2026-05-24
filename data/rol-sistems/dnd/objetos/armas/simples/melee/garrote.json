@@ -1,0 +1,14 @@
+{
+  "arma": {
+    "nombre": "Garrote",
+    "nombre_original": "Greatclub",
+    "categoria": "Arma simple de cuerpo a cuerpo",
+    "daño": "1d8",
+    "tipo_daño": "contundente",
+    "propiedades": ["Dos manos"],
+    "maestria": "Empujar",
+    "peso_lb": 10,
+    "coste": "2 pp",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

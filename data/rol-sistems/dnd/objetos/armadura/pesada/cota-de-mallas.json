@@ -1,0 +1,13 @@
+{
+  "armadura": {
+    "nombre": "Cota de mallas",
+    "nombre_original": "Chain Mail",
+    "categoria": "Armadura pesada",
+    "ca": "16",
+    "fuerza_minima": 13,
+    "desventaja_sigilo": true,
+    "peso_lb": 55,
+    "coste": "75 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

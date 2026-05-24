@@ -1,0 +1,14 @@
+{
+  "arma": {
+    "nombre": "Hacha de mano",
+    "nombre_original": "Handaxe",
+    "categoria": "Arma simple de cuerpo a cuerpo",
+    "daño": "1d6",
+    "tipo_daño": "cortante",
+    "propiedades": ["Ligera", "Arrojadiza (20/60)"],
+    "maestria": "Hostigar",
+    "peso_lb": 2,
+    "coste": "5 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

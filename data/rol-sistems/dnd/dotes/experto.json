@@ -1,0 +1,17 @@
+{
+  "dote": {
+    "nombre": "Experto",
+    "nombre_original": "Skilled",
+    "categoria": "Origen",
+    "prerequisito": null,
+    "repetible": true,
+    "fuente": "Manual del Jugador 2024",
+    "descripcion": "Has dedicado tiempo a perfeccionar tus habilidades, adquiriendo una amplia gama de competencias útiles.",
+    "beneficios": [
+      {
+        "nombre": "Competencias adicionales",
+        "descripcion": "Ganas competencia en cualquier combinación de tres habilidades o herramientas a tu elección."
+      }
+    ]
+  }
+}

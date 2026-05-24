@@ -1,0 +1,14 @@
+{
+  "arma": {
+    "nombre": "Pico de guerra",
+    "nombre_original": "War Pick",
+    "categoria": "Arma marcial de cuerpo a cuerpo",
+    "daño": "1d8",
+    "tipo_daño": "perforante",
+    "propiedades": [],
+    "maestria": "Aturdir",
+    "peso_lb": 2,
+    "coste": "5 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

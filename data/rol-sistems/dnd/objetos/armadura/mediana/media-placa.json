@@ -1,0 +1,13 @@
+{
+  "armadura": {
+    "nombre": "Media armadura de placas",
+    "nombre_original": "Half Plate Armor",
+    "categoria": "Armadura mediana",
+    "ca": "15 + modificador de Destreza (máximo +2)",
+    "fuerza_minima": null,
+    "desventaja_sigilo": true,
+    "peso_lb": 40,
+    "coste": "750 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

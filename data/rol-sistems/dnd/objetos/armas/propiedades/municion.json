@@ -1,0 +1,7 @@
+{
+  "propiedad": {
+    "nombre": "Munición",
+    "nombre_original": "Ammunition",
+    "descripcion": "Usas munición para disparar esta arma. Cada ataque a distancia consume una unidad de munición. Al final del combate, puedes recuperar la mitad de la munición usada buscando en el campo de batalla. Si usas un arma que tiene esta propiedad para realizar un ataque cuerpo a cuerpo, tratas el arma como un arma improvisada."
+  }
+}

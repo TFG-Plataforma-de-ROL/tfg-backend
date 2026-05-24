@@ -1,0 +1,14 @@
+{
+  "arma": {
+    "nombre": "Estoque",
+    "nombre_original": "Rapier",
+    "categoria": "Arma marcial de cuerpo a cuerpo",
+    "daño": "1d8",
+    "tipo_daño": "perforante",
+    "propiedades": ["Finura"],
+    "maestria": "Hostigar",
+    "peso_lb": 2,
+    "coste": "25 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "arma": {
+    "nombre": "Látigo",
+    "nombre_original": "Whip",
+    "categoria": "Arma marcial de cuerpo a cuerpo",
+    "daño": "1d4",
+    "tipo_daño": "cortante",
+    "propiedades": ["Finura", "Alcance"],
+    "maestria": "Ralentizar",
+    "peso_lb": 3,
+    "coste": "2 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

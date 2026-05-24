@@ -1,0 +1,13 @@
+{
+  "armadura": {
+    "nombre": "Cota de anillas",
+    "nombre_original": "Ring Mail",
+    "categoria": "Armadura pesada",
+    "ca": "14",
+    "fuerza_minima": null,
+    "desventaja_sigilo": true,
+    "peso_lb": 40,
+    "coste": "30 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

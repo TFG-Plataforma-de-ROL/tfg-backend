@@ -1,0 +1,14 @@
+{
+  "arma": {
+    "nombre": "Gran hacha",
+    "nombre_original": "Greataxe",
+    "categoria": "Arma marcial de cuerpo a cuerpo",
+    "daño": "1d12",
+    "tipo_daño": "cortante",
+    "propiedades": ["Pesada", "Dos manos"],
+    "maestria": "Segar",
+    "peso_lb": 7,
+    "coste": "30 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

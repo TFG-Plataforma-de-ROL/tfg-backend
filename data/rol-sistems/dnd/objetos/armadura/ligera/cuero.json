@@ -1,0 +1,13 @@
+{
+  "armadura": {
+    "nombre": "Armadura de cuero",
+    "nombre_original": "Leather Armor",
+    "categoria": "Armadura ligera",
+    "ca": "11 + modificador de Destreza",
+    "fuerza_minima": null,
+    "desventaja_sigilo": false,
+    "peso_lb": 10,
+    "coste": "10 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

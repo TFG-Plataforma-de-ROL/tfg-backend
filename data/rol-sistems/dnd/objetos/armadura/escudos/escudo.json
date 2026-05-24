@@ -1,0 +1,14 @@
+{
+  "armadura": {
+    "nombre": "Escudo",
+    "nombre_original": "Shield",
+    "categoria": "Escudo",
+    "ca_bonus": "+2",
+    "nota": "Debes ser competente con escudos para obtener el bonificador de CA. Empuñar un escudo ocupa una mano.",
+    "fuerza_minima": null,
+    "desventaja_sigilo": false,
+    "peso_lb": 6,
+    "coste": "10 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

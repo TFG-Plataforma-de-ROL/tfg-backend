@@ -1,0 +1,7 @@
+{
+  "maestria": {
+    "nombre": "Derribar",
+    "nombre_original": "Topple",
+    "descripcion": "Si golpeas a una criatura con esta arma, puedes obligarla a hacer una tirada de salvación de Constitución (CD 8 + modificador de característica usado para atacar + bonificador de competencia). Si falla, la criatura tiene la condición Derribada."
+  }
+}

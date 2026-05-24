@@ -1,0 +1,14 @@
+{
+  "arma": {
+    "nombre": "Dardo",
+    "nombre_original": "Dart",
+    "categoria": "Arma simple a distancia",
+    "daño": "1d4",
+    "tipo_daño": "perforante",
+    "propiedades": ["Finura", "Arrojadiza (20/60)"],
+    "maestria": "Hostigar",
+    "peso_lb": 0.25,
+    "coste": "5 pc",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

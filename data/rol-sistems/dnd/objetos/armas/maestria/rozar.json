@@ -1,0 +1,7 @@
+{
+  "maestria": {
+    "nombre": "Rozar",
+    "nombre_original": "Graze",
+    "descripcion": "Si fallas a una criatura con un ataque cuerpo a cuerpo usando esta arma, puedes causarle daño igual al modificador de característica que usaste para la tirada de ataque (mínimo 0). El tipo de daño es el mismo que el del arma."
+  }
+}

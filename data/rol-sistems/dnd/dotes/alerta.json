@@ -1,0 +1,21 @@
+{
+  "dote": {
+    "nombre": "Alerta",
+    "nombre_original": "Alert",
+    "categoria": "Origen",
+    "prerequisito": null,
+    "repetible": false,
+    "fuente": "Manual del Jugador 2024",
+    "descripcion": "Has desarrollado un sentido sobrenatural para el peligro, lo que te permite reaccionar con rapidez ante las amenazas.",
+    "beneficios": [
+      {
+        "nombre": "Competencia en Iniciativa",
+        "descripcion": "Cuando tiras Iniciativa, puedes añadir tu bonificador de competencia a la tirada."
+      },
+      {
+        "nombre": "Intercambio de Iniciativa",
+        "descripcion": "Inmediatamente después de tirar Iniciativa, puedes intercambiar tu resultado de Iniciativa con el de un aliado dispuesto en el mismo combate. No puedes hacer este intercambio si tú o el aliado tiene la condición Incapacitado."
+      }
+    ]
+  }
+}

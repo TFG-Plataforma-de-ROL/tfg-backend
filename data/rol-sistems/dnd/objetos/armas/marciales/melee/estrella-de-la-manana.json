@@ -1,0 +1,14 @@
+{
+  "arma": {
+    "nombre": "Estrella de la mañana",
+    "nombre_original": "Morningstar",
+    "categoria": "Arma marcial de cuerpo a cuerpo",
+    "daño": "1d8",
+    "tipo_daño": "perforante",
+    "propiedades": [],
+    "maestria": "Aturdir",
+    "peso_lb": 4,
+    "coste": "15 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

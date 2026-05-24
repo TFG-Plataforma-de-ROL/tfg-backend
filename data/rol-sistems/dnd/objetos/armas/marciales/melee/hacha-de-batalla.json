@@ -1,0 +1,14 @@
+{
+  "arma": {
+    "nombre": "Hacha de batalla",
+    "nombre_original": "Battleaxe",
+    "categoria": "Arma marcial de cuerpo a cuerpo",
+    "daño": "1d8",
+    "tipo_daño": "cortante",
+    "propiedades": ["Versátil (1d10)"],
+    "maestria": "Derribar",
+    "peso_lb": 4,
+    "coste": "10 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

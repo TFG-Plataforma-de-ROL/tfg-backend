@@ -1,0 +1,7 @@
+{
+  "maestria": {
+    "nombre": "Ralentizar",
+    "nombre_original": "Slow",
+    "descripcion": "Si golpeas a una criatura con esta arma y le causas daño, puedes reducir su velocidad en 3 metros (10 pies) hasta el inicio de tu próximo turno. La penalización no se acumula si golpeas a la misma criatura varias veces con esta propiedad."
+  }
+}

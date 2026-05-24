@@ -1,0 +1,13 @@
+{
+  "armadura": {
+    "nombre": "Armadura de placas",
+    "nombre_original": "Plate Armor",
+    "categoria": "Armadura pesada",
+    "ca": "18",
+    "fuerza_minima": 15,
+    "desventaja_sigilo": true,
+    "peso_lb": 65,
+    "coste": "1500 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

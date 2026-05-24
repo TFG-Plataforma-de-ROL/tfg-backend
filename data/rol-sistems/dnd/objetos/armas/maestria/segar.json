@@ -1,0 +1,7 @@
+{
+  "maestria": {
+    "nombre": "Segar",
+    "nombre_original": "Cleave",
+    "descripcion": "Si golpeas a una criatura con un ataque cuerpo a cuerpo usando esta arma, puedes realizar otro ataque con ella contra una criatura diferente que esté a 1,5 metros (5 pies) de la primera y dentro de tu alcance. La tirada de ataque adicional no tiene modificadores. Solo puedes hacer este ataque extra una vez por turno."
+  }
+}

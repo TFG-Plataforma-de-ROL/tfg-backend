@@ -1,0 +1,7 @@
+{
+  "propiedad": {
+    "nombre": "Finura",
+    "nombre_original": "Finesse",
+    "descripcion": "Al realizar un ataque con esta arma, usas el modificador más alto entre Fuerza y Destreza para las tiradas de ataque y daño. Debes usar el mismo modificador para ambas tiradas."
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "propiedad": {
+    "nombre": "Ligera",
+    "nombre_original": "Light",
+    "descripcion": "Cuando realizas la acción de Atacar con esta arma y tienes un arma Ligera en la otra mano, puedes realizar un ataque adicional con esa otra arma como acción adicional. No añades el modificador de característica al daño del ataque adicional, a menos que dicho modificador sea negativo."
+  }
+}

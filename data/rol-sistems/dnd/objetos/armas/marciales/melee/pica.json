@@ -1,0 +1,14 @@
+{
+  "arma": {
+    "nombre": "Pica",
+    "nombre_original": "Pike",
+    "categoria": "Arma marcial de cuerpo a cuerpo",
+    "daño": "1d10",
+    "tipo_daño": "perforante",
+    "propiedades": ["Pesada", "Alcance", "Dos manos"],
+    "maestria": "Empujar",
+    "peso_lb": 18,
+    "coste": "5 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

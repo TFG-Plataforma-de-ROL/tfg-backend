@@ -1,0 +1,14 @@
+{
+  "arma": {
+    "nombre": "Bastón",
+    "nombre_original": "Quarterstaff",
+    "categoria": "Arma simple de cuerpo a cuerpo",
+    "daño": "1d6",
+    "tipo_daño": "contundente",
+    "propiedades": ["Versátil (1d8)"],
+    "maestria": "Derribar",
+    "peso_lb": 4,
+    "coste": "2 pp",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "arma": {
+    "nombre": "Mazo",
+    "nombre_original": "Maul",
+    "categoria": "Arma marcial de cuerpo a cuerpo",
+    "daño": "2d6",
+    "tipo_daño": "contundente",
+    "propiedades": ["Pesada", "Dos manos"],
+    "maestria": "Derribar",
+    "peso_lb": 10,
+    "coste": "10 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

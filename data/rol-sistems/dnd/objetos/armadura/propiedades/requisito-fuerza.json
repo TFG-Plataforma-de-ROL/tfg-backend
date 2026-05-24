@@ -1,0 +1,7 @@
+{
+  "propiedad": {
+    "nombre": "Requisito de Fuerza",
+    "nombre_original": "Strength Requirement",
+    "descripcion": "Si la puntuación de Fuerza del portador es inferior al valor indicado en la tabla, su velocidad se reduce en 3 metros (10 pies) mientras lleve esta armadura."
+  }
+}

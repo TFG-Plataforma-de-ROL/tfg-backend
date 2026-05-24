@@ -1,0 +1,14 @@
+{
+  "arma": {
+    "nombre": "Alabarda",
+    "nombre_original": "Halberd",
+    "categoria": "Arma marcial de cuerpo a cuerpo",
+    "daño": "1d10",
+    "tipo_daño": "cortante",
+    "propiedades": ["Pesada", "Alcance", "Dos manos"],
+    "maestria": "Segar",
+    "peso_lb": 6,
+    "coste": "20 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

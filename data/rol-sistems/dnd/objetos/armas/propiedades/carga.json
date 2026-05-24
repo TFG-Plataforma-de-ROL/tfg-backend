@@ -1,0 +1,7 @@
+{
+  "propiedad": {
+    "nombre": "Carga",
+    "nombre_original": "Loading",
+    "descripcion": "Solo puedes disparar una pieza de munición por acción, acción adicional o reacción con esta arma, independientemente del número de ataques que puedas realizar normalmente."
+  }
+}

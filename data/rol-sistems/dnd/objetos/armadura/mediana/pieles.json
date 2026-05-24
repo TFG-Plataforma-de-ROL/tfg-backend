@@ -1,0 +1,13 @@
+{
+  "armadura": {
+    "nombre": "Armadura de pieles",
+    "nombre_original": "Hide Armor",
+    "categoria": "Armadura mediana",
+    "ca": "12 + modificador de Destreza (máximo +2)",
+    "fuerza_minima": null,
+    "desventaja_sigilo": false,
+    "peso_lb": 12,
+    "coste": "10 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

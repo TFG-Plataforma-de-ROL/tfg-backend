@@ -1,0 +1,14 @@
+{
+  "arma": {
+    "nombre": "Ballesta de mano",
+    "nombre_original": "Hand Crossbow",
+    "categoria": "Arma marcial a distancia",
+    "daño": "1d6",
+    "tipo_daño": "perforante",
+    "propiedades": ["Munición (30/120)", "Ligera", "Carga"],
+    "maestria": "Hostigar",
+    "peso_lb": 3,
+    "coste": "75 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

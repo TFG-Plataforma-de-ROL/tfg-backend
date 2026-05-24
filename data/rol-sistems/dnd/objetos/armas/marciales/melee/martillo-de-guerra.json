@@ -1,0 +1,14 @@
+{
+  "arma": {
+    "nombre": "Martillo de guerra",
+    "nombre_original": "Warhammer",
+    "categoria": "Arma marcial de cuerpo a cuerpo",
+    "daño": "1d8",
+    "tipo_daño": "contundente",
+    "propiedades": ["Versátil (1d10)"],
+    "maestria": "Empujar",
+    "peso_lb": 2,
+    "coste": "15 po",
+    "fuente": "Manual del Jugador 2024"
+  }
+}

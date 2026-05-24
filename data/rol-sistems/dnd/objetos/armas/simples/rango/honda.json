@@ -1,0 +1,14 @@
+{
+  "arma": {
+    "nombre": "Honda",
+    "nombre_original": "Sling",
+    "categoria": "Arma simple a distancia",
+    "daño": "1d4",
+    "tipo_daño": "contundente",
+    "propiedades": ["Munición (30/120)"],
+    "maestria": "Ralentizar",
+    "peso_lb": 0,
+    "coste": "1 pp",
+    "fuente": "Manual del Jugador 2024"
+  }
+}
