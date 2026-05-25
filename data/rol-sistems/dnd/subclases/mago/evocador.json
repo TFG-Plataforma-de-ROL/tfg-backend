@@ -1,0 +1,17 @@
+{
+  "subclase": {
+    "nombre": "Evocador",
+    "clase": "Mago",
+    "descripcion": "Los evocadores canalizan energía mágica hacia poderosos efectos explosivos. Sus estudios incluyen no sólo fuego y relámpago, sino también magia que pueda proteger a sus aliados de la devastación que desatan.",
+    "rasgos_nivel_3": [
+      {
+        "nombre": "Evocación moldeada",
+        "descripcion": "Cuando lanzas un conjuro de Evocación que afecta a otras criaturas que puedas ver, puedes elegir un número de ellas igual a 1 más el nivel del conjuro. Las criaturas elegidas superan automáticamente sus tiradas de salvación contra el conjuro y no sufren daño si normalmente sufrirían la mitad al superar la tirada."
+      },
+      {
+        "nombre": "Trucos de evocación",
+        "descripcion": "Cuando lanzas un truco de Mago que cause daño, añades tu modificador de Inteligencia al daño de un objetivo del conjuro. No obstante, sólo puedes añadir tu modificador a uno de los impactos del conjuro, independientemente de cuántos objetivos tenga."
+      }
+    ]
+  }
+}

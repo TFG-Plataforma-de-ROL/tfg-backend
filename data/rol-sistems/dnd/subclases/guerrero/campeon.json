@@ -1,0 +1,13 @@
+{
+  "subclase": {
+    "nombre": "Campeón",
+    "clase": "Guerrero",
+    "descripcion": "El arquetipo del Campeón se centra en el desarrollo de la potencia física bruta hasta alcanzar la perfección marcial. Quienes eligen este arquetipo combinan el entrenamiento riguroso con la excelencia física para realizar golpes devastadores.",
+    "rasgos_nivel_3": [
+      {
+        "nombre": "Crítico mejorado",
+        "descripcion": "Tu tirada de ataque tiene la propiedad de Crítico con un resultado de 19 o 20 en el d20."
+      }
+    ]
+  }
+}

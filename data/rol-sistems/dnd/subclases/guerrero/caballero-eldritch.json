@@ -1,0 +1,17 @@
+{
+  "subclase": {
+    "nombre": "Caballero Eldritch",
+    "clase": "Guerrero",
+    "descripcion": "El arquetipo del Caballero Eldritch combina la maestría marcial propia de todos los guerreros con el cuidadoso estudio de la magia. Los Caballeros Eldritch utilizan técnicas mágicas parecidas a las empleadas por los magos.",
+    "rasgos_nivel_3": [
+      {
+        "nombre": "Lanzamiento de conjuros",
+        "descripcion": "Aprendes a lanzar conjuros de mago. Conoces 2 trucos y 3 conjuros de nivel 1. Tienes 2 espacios de conjuro de nivel 1."
+      },
+      {
+        "nombre": "Vínculo con arma",
+        "descripcion": "Puedes vincularte con un arma que lleves equipada. No puedes ser desarmado de ella, y puedes invocarla a tu mano como Acción adicional."
+      }
+    ]
+  }
+}

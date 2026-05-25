@@ -1,0 +1,6 @@
+{
+  "estilo_combate": {
+    "nombre": "Protección",
+    "descripcion": "Cuando una criatura que puedas ver ataque a un objetivo distinto de ti que esté a 5 pies de ti, puedes usar tu Reacción para imponer Desventaja a la tirada de ataque. Debes llevar un escudo."
+  }
+}

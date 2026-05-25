@@ -28,6 +28,37 @@ const trasfondos = [
   { id: 12, nombre: 'Sabio',    ruta: `${DND_DIR}/trasfondos/sabio.json`    },
 ]
 
+const estilosCombate = [
+  { id: 13, nombre: 'Arquería',           ruta: `${DND_DIR}/dotes/dotes-pelea/arqueria.json`    },
+  { id: 14, nombre: 'Defensa',            ruta: `${DND_DIR}/dotes/dotes-pelea/defensa.json`     },
+  { id: 15, nombre: 'Duelo',              ruta: `${DND_DIR}/dotes/dotes-pelea/duelo.json`       },
+  { id: 16, nombre: 'Combate a dos manos', ruta: `${DND_DIR}/dotes/dotes-pelea/grandes-armas.json` },
+  { id: 17, nombre: 'Lucha con dos armas', ruta: `${DND_DIR}/dotes/dotes-pelea/dos-armas.json`  },
+  { id: 18, nombre: 'Protección',         ruta: `${DND_DIR}/dotes/dotes-pelea/proteccion.json` },
+]
+
+const subclasesGuerrero = [
+  { id: 19, nombre: 'Campeón',           ruta: `${DND_DIR}/subclases/guerrero/campeon.json`            },
+  { id: 20, nombre: 'Maestro de batalla', ruta: `${DND_DIR}/subclases/guerrero/maestro-de-batalla.json` },
+  { id: 21, nombre: 'Caballero Eldritch', ruta: `${DND_DIR}/subclases/guerrero/caballero-eldritch.json` },
+  { id: 22, nombre: 'Guerrero Psi',       ruta: `${DND_DIR}/subclases/guerrero/guerrero-psi.json`       },
+]
+
+const subclasesMago = [
+  { id: 23, nombre: 'Abjurador', ruta: `${DND_DIR}/subclases/mago/abjurador.json` },
+  { id: 24, nombre: 'Evocador',  ruta: `${DND_DIR}/subclases/mago/evocador.json`  },
+]
+
+const subclasesPicaro = [
+  { id: 25, nombre: 'Asesino', ruta: `${DND_DIR}/subclases/picaro/asesino.json` },
+  { id: 26, nombre: 'Ladrón',  ruta: `${DND_DIR}/subclases/picaro/ladron.json`  },
+]
+
+const subclasesClerigo = [
+  { id: 27, nombre: 'Dominio de Vida', ruta: `${DND_DIR}/subclases/clerigo/dominio-vida.json` },
+  { id: 28, nombre: 'Dominio de Luz',  ruta: `${DND_DIR}/subclases/clerigo/dominio-luz.json`  },
+]
+
 async function main() {
   const dnd = await prisma.sistemaRol.upsert({
     where: { id_sistema_rol: 1 },
@@ -56,6 +87,46 @@ async function main() {
       where: { id_item: t.id },
       update: { ruta_json: t.ruta },
       create: { id_sistema_rol: dnd.id_sistema_rol, tipo_item: 'trasfondo', nombre: t.nombre, ruta_json: t.ruta },
+    })
+  }
+
+  for (const e of estilosCombate) {
+    await prisma.item.upsert({
+      where: { id_item: e.id },
+      update: { ruta_json: e.ruta },
+      create: { id_sistema_rol: dnd.id_sistema_rol, tipo_item: 'estilo_combate', nombre: e.nombre, ruta_json: e.ruta },
+    })
+  }
+
+  for (const s of subclasesGuerrero) {
+    await prisma.item.upsert({
+      where: { id_item: s.id },
+      update: { ruta_json: s.ruta },
+      create: { id_sistema_rol: dnd.id_sistema_rol, tipo_item: 'subclase_guerrero', nombre: s.nombre, ruta_json: s.ruta },
+    })
+  }
+
+  for (const s of subclasesMago) {
+    await prisma.item.upsert({
+      where: { id_item: s.id },
+      update: { ruta_json: s.ruta },
+      create: { id_sistema_rol: dnd.id_sistema_rol, tipo_item: 'subclase_mago', nombre: s.nombre, ruta_json: s.ruta },
+    })
+  }
+
+  for (const s of subclasesPicaro) {
+    await prisma.item.upsert({
+      where: { id_item: s.id },
+      update: { ruta_json: s.ruta },
+      create: { id_sistema_rol: dnd.id_sistema_rol, tipo_item: 'subclase_picaro', nombre: s.nombre, ruta_json: s.ruta },
+    })
+  }
+
+  for (const s of subclasesClerigo) {
+    await prisma.item.upsert({
+      where: { id_item: s.id },
+      update: { ruta_json: s.ruta },
+      create: { id_sistema_rol: dnd.id_sistema_rol, tipo_item: 'subclase_clerigo', nombre: s.nombre, ruta_json: s.ruta },
     })
   }
 

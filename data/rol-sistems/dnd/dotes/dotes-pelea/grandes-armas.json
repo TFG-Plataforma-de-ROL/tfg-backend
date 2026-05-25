@@ -1,0 +1,6 @@
+{
+  "estilo_combate": {
+    "nombre": "Combate a dos manos",
+    "descripcion": "Cuando obtienes un 1 o un 2 en un dado de daño de un ataque que hagas con un arma cuerpo a cuerpo con la propiedad de Dos manos o Versátil, puedes volver a tirar el dado y debes usar el nuevo resultado."
+  }
+}

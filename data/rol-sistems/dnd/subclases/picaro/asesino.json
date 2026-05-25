@@ -1,0 +1,17 @@
+{
+  "subclase": {
+    "nombre": "Asesino",
+    "clase": "Pícaro",
+    "descripcion": "Te centras en la siniestra arte de la muerte. Quienes se adhieren a este arquetipo son maestros de los venenos y los disfraces, pacientes cazadores que esperan el momento perfecto para asesttar el golpe definitivo.",
+    "rasgos_nivel_3": [
+      {
+        "nombre": "Asesinar",
+        "descripcion": "Eres extraordinariamente peligroso cuando atacas por sorpresa. Tienes Ventaja en las tiradas de ataque contra cualquier criatura que aún no haya realizado un turno en combate. Además, todo golpe crítico que hagas contra una criatura sorprendida inflige daño adicional igual a tu nivel de Pícaro."
+      },
+      {
+        "nombre": "Infiltrar",
+        "descripcion": "Con un trabajo de 1 hora, puedes crear un disfraz que te haga parecer un tipo de persona específica: guardia de ciudad, mercader, aristócrata, mendigo, etc. Esta apariencia no supera un examen minucioso, pero engaña a observadores casuales. Obtienes también competencia en el conjunto de herramientas de disfraz si aún no la tienes."
+      }
+    ]
+  }
+}

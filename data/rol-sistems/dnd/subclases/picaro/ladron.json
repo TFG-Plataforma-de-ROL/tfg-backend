@@ -1,0 +1,17 @@
+{
+  "subclase": {
+    "nombre": "Ladrón",
+    "clase": "Pícaro",
+    "descripcion": "El arquetipo del Ladrón perfecciona las habilidades que lo hacen el experto definitivo del furtivismo, la velocidad y las artimañas. Te conviertes en un maestro de la adquisición de lo que otros poseen y te especializas en infiltrarte en lugares peligrosos.",
+    "rasgos_nivel_3": [
+      {
+        "nombre": "Manos rápidas",
+        "descripcion": "Como Acción adicional, puedes hacer una prueba de Destreza (Juego de manos), usar tus herramientas de ladrón para abrir una cerradura o desactivar una trampa, o realizar la acción Usar objeto."
+      },
+      {
+        "nombre": "Trabajo en las alturas",
+        "descripcion": "Tu Velocidad de escalar es igual a tu Velocidad de andar. Además, cuando realizas un salto en carrera, la distancia que recorres aumenta en pies equivalentes a tu modificador de Destreza."
+      }
+    ]
+  }
+}

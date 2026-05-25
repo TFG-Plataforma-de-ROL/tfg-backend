@@ -1,0 +1,17 @@
+{
+  "subclase": {
+    "nombre": "Maestro de batalla",
+    "clase": "Guerrero",
+    "descripcion": "Quienes eligen este arquetipo aprenden técnicas especiales de combate transmitidas a través de generaciones. Para un Maestro de batalla, el combate es un estudio académico que incluye todo, desde la historia de las batallas hasta la anatomía de los adversarios.",
+    "rasgos_nivel_3": [
+      {
+        "nombre": "Superioridad de combate",
+        "descripcion": "Aprendes maniobras de combate impulsadas por Dados de superioridad (d8). Comienzas con 4 dados de superioridad y obtienes más según subes de nivel. Puedes gastarlos para ejecutar maniobras especiales. Eliges 3 maniobras al nivel 3."
+      },
+      {
+        "nombre": "Estudiante de guerra",
+        "descripcion": "Obtienes competencia con un tipo de herramientas de artesano de tu elección."
+      }
+    ]
+  }
+}

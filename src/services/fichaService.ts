@@ -1,4 +1,5 @@
 // src/services/fichaService.ts
+import { Prisma } from '@prisma/client';
 import { prisma } from '../utils/prisma.js';
 
 export const fichaService = {
@@ -114,7 +115,7 @@ export const fichaService = {
             id_ficha: idFicha,
             id_campo_plantilla,
             id_item_valor: c.id_item_valor ?? null,
-            valor: c.valor !== undefined ? (c.valor as object) : null,
+            valor: c.valor !== undefined ? (c.valor as Prisma.InputJsonValue) : Prisma.DbNull,
           };
         })
         .filter((c): c is NonNullable<typeof c> => c !== null);

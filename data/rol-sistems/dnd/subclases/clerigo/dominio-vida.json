@@ -1,0 +1,17 @@
+{
+  "subclase": {
+    "nombre": "Dominio de Vida",
+    "clase": "Clérigo",
+    "descripcion": "El Dominio de Vida se centra en la vibrante energía positiva, una de las fuerzas fundamentales del universo, que sustenta toda vida. Los dioses de la vida promueven la vitalidad y la salud a través de la curación de los enfermos y los heridos.",
+    "rasgos_nivel_3": [
+      {
+        "nombre": "Discípulo de la vida",
+        "descripcion": "Tus conjuros de curación son más eficaces. Siempre que uses un conjuro de nivel 1 o superior para restaurar Puntos de golpe a una criatura, la criatura recupera Puntos de golpe adicionales iguales a 2 más el nivel del conjuro."
+      },
+      {
+        "nombre": "Preservar la vida",
+        "descripcion": "Como acción Mágica, presentas tu símbolo sagrado e invocas energía curativa que puede restaurar hasta cinco veces tu nivel de Clérigo en Puntos de golpe. Puedes repartir estos Puntos de golpe entre cualquier número de criaturas a 9 metros de ti. No puedes elevar los Puntos de golpe de ninguna criatura por encima de la mitad de su máximo."
+      }
+    ]
+  }
+}

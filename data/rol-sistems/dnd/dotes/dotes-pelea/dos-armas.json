@@ -1,0 +1,6 @@
+{
+  "estilo_combate": {
+    "nombre": "Lucha con dos armas",
+    "descripcion": "Cuando realices el ataque adicional de luchar con dos armas, puedes añadir tu modificador de característica al daño del ataque."
+  }
+}

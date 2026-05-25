@@ -1,0 +1,17 @@
+{
+  "subclase": {
+    "nombre": "Abjurador",
+    "clase": "Mago",
+    "descripcion": "La escuela de Abjuración enfatiza la magia que bloquea, disipa y protege. Sus estudiantes se convierten en magos especializados en la creación de potentes escudos mágicos, sellando portales malignos y exiliando criaturas a otros planos de existencia.",
+    "rasgos_nivel_3": [
+      {
+        "nombre": "Abjuración mejorada",
+        "descripcion": "Cuando lanzas un conjuro de abjuración, añades tu bonificador de competencia a cualquier tirada de salvación que cause el conjuro. Además, obtienes Resistencia a un tipo de daño a tu elección al principio de cada Descanso largo."
+      },
+      {
+        "nombre": "Proyectil protector",
+        "descripcion": "Puedes urdir magia para crearte una defensa mágica. Como Acción adicional, creas un proyectil de energía arcana que orbita a tu alrededor hasta que lo uses. Cuando recibes daño, puedes usar tu Reacción para hacer que el proyectil explote y reduces el daño en 1d10 más tu modificador de Inteligencia."
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "subclase": {
+    "nombre": "Guerrero Psi",
+    "clase": "Guerrero",
+    "descripcion": "Despertado a la magia de la mente de un experto en telepatía, un Guerrero Psi es un guerrero que aumenta su poder físico con poder psi, canalizando la fuerza de la mente para golpear y defender, ralentizar y disipar.",
+    "rasgos_nivel_3": [
+      {
+        "nombre": "Poder psiónico",
+        "descripcion": "Albergas una mota de poder psiónico en tu mente. La medida de tu poder se representa con Dados de Energía psiónica (d6). Empiezas con 2 dados. Obtienes dos rasgos que emplean estos dados."
+      },
+      {
+        "nombre": "Mejora psiónica",
+        "descripcion": "Cuando haces una tirada de ataque con arma o de característica, puedes gastar un Dado de Energía psiónica y añadir el resultado a la tirada."
+      },
+      {
+        "nombre": "Escudo psiónico",
+        "descripcion": "Cuando sufres daño, puedes usar tu Reacción para gastar un Dado de Energía psiónica y reducir el daño en la cantidad obtenida en el dado más tu modificador de Inteligencia."
+      }
+    ]
+  }
+}

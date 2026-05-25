@@ -1,0 +1,17 @@
+{
+  "subclase": {
+    "nombre": "Dominio de Luz",
+    "clase": "Clérigo",
+    "descripcion": "Los dioses de la luz, incluyendo Helm, Lathander, Pholtus, Branchala y el Sol Dorado de Pelor, promueven los ideales del renacimiento y la renovación, de la verdad, la vigilancia y la belleza. Algunos de estos dioses son representados como el sol mismo.",
+    "rasgos_nivel_3": [
+      {
+        "nombre": "Destello de prevención",
+        "descripcion": "Puedes interponer la luz divina entre ti y un atacante. Cuando una criatura que puedas ver te hace una tirada de ataque, puedes usar tu Reacción para imponer Desventaja en esa tirada. Puedes usar este rasgo un número de veces igual a tu modificador de Sabiduría (mínimo 1). Recuperas todos los usos gastados cuando terminas un Descanso largo."
+      },
+      {
+        "nombre": "Truco mejorado",
+        "descripcion": "Conoces el truco Luz y Resplandor. Obtienes también el truco Sagrada llama si aún no lo conoces. Estos no cuentan para tu límite de trucos de Clérigo."
+      }
+    ]
+  }
+}
