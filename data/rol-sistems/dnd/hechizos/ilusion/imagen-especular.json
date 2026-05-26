@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Imagen Especular",
+    "nivel": 2,
+    "escuela": "Ilusión",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "Personal",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": false,
+      "descripcion_material": null
+    },
+    "duracion": "1 minuto",
+    "concentracion": false,
+    "ritual": false,
+    "descripcion": "Tres réplicas ilusorias tuyas aparecen en tu espacio y copian tus movimientos. Cuando eres atacado, se tira un d20 para determinar si el ataque impacta a una réplica en tu lugar. Cada réplica destruida reduce la protección.",
+    "clases": ["Hechicero", "Brujo", "Mago"],
+    "escalado": null
+  }
+}

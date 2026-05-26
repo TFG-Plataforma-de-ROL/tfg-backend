@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Caída de Pluma",
+    "nivel": 1,
+    "escuela": "Transmutación",
+    "tiempo_lanzamiento": "1 reacción, que tomas cuando tú o una criatura a 18 metros de ti cae",
+    "alcance": "18 metros",
+    "componentes": {
+      "verbal": true,
+      "somatico": false,
+      "material": true,
+      "descripcion_material": "Una pequeña pluma o un trozo de plumón"
+    },
+    "duracion": "1 minuto",
+    "concentracion": false,
+    "ritual": false,
+    "descripcion": "Elige hasta cinco criaturas que caigan dentro del alcance. Su velocidad de caída se reduce a 18 metros por asalto. Si aterrizan antes de que el conjuro termine, no sufren daño por caída y pueden aterrizar de pie.",
+    "clases": ["Bardo", "Hechicero", "Mago"],
+    "escalado": null
+  }
+}

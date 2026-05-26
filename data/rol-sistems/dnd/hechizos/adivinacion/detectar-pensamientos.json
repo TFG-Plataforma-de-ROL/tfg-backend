@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Detectar Pensamientos",
+    "nivel": 2,
+    "escuela": "Adivinación",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "Personal",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": true,
+      "descripcion_material": "Una moneda de cobre"
+    },
+    "duracion": "Concentración, hasta 1 minuto",
+    "concentracion": true,
+    "ritual": false,
+    "descripcion": "Puedes leer los pensamientos superficiales de una criatura visible a 9 metros de ti. Puedes intentar escudriñar más profundamente, pero la criatura puede notar la intrusión y tiene derecho a una tirada de salvación de Sabiduría para resistir.",
+    "clases": ["Bardo", "Hechicero", "Mago"],
+    "escalado": null
+  }
+}

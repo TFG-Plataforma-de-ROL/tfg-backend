@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Detectar Magia",
+    "nivel": 1,
+    "escuela": "Adivinación",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "Personal",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": false,
+      "descripcion_material": null
+    },
+    "duracion": "Concentración, hasta 10 minutos",
+    "concentracion": true,
+    "ritual": true,
+    "descripcion": "Percibes la presencia de magia a 18 metros de ti. Puedes usar tu acción para ver un débil resplandor alrededor de criaturas u objetos visibles que contengan magia y, si lo haces, percibes la escuela de magia correspondiente.",
+    "clases": ["Bardo", "Clérigo", "Druida", "Paladín", "Explorador", "Hechicero", "Mago"],
+    "escalado": null
+  }
+}

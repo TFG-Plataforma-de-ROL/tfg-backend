@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Visión en la Oscuridad",
+    "nivel": 2,
+    "escuela": "Transmutación",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "Toque",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": true,
+      "descripcion_material": "Un pellizco de zanahoria seca o una cornalina"
+    },
+    "duracion": "8 horas",
+    "concentracion": false,
+    "ritual": false,
+    "descripcion": "Tocas a una criatura dispuesta y le otorgas la capacidad de ver en la oscuridad. Por la duración, esa criatura tiene Visión en la Oscuridad hasta 18 metros.",
+    "clases": ["Druida", "Explorador", "Hechicero", "Mago"],
+    "escalado": null
+  }
+}

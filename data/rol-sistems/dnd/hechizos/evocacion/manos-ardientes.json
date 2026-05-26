@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Manos Ardientes",
+    "nivel": 1,
+    "escuela": "Evocación",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "Personal (cono de 4,5 metros)",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": false,
+      "descripcion_material": null
+    },
+    "duracion": "Instantánea",
+    "concentracion": false,
+    "ritual": false,
+    "descripcion": "Una fina hoja de llamas barre desde las yemas de tus dedos. Cada criatura en un Cono de 4,5 metros debe superar una tirada de salvación de Destreza o sufrirá 3d6 de daño por fuego, o la mitad si tiene éxito.",
+    "clases": ["Hechicero", "Mago"],
+    "escalado": "El daño aumenta en 1d6 por cada nivel de casilla por encima del 1."
+  }
+}

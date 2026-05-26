@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Luz",
+    "nivel": 0,
+    "escuela": "Evocación",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "Toque",
+    "componentes": {
+      "verbal": true,
+      "somatico": false,
+      "material": true,
+      "descripcion_material": "Una luciérnaga o musgo fosforescente"
+    },
+    "duracion": "1 hora",
+    "concentracion": false,
+    "ritual": false,
+    "descripcion": "Tocas un objeto de hasta 3 metros en cualquier dimensión. Emite luz brillante en 6 metros y luz tenue 6 metros más allá. La luz puede ser de cualquier color. Cubrir el objeto con algo opaco bloquea la luz.",
+    "clases": ["Bardo", "Clérigo", "Hechicero", "Mago"],
+    "escalado": null
+  }
+}

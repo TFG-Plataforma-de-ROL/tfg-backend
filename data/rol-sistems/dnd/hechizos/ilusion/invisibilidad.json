@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Invisibilidad",
+    "nivel": 2,
+    "escuela": "Ilusión",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "Toque",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": true,
+      "descripcion_material": "Un párpado de murciélago"
+    },
+    "duracion": "Concentración, hasta 1 hora",
+    "concentracion": true,
+    "ritual": false,
+    "descripcion": "Una criatura que toques se vuelve invisible junto con todo lo que lleve o vista. El conjuro termina para ese objetivo si ataca o lanza un conjuro.",
+    "clases": ["Bardo", "Hechicero", "Brujo", "Mago"],
+    "escalado": "Al lanzarlo con una casilla de nivel superior, puedes afectar a una criatura adicional por cada nivel por encima del 2."
+  }
+}

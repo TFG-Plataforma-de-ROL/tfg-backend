@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Rayo Abrasador",
+    "nivel": 2,
+    "escuela": "Evocación",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "27 metros",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": false,
+      "descripcion_material": null
+    },
+    "duracion": "Instantánea",
+    "concentracion": false,
+    "ritual": false,
+    "descripcion": "Creas tres rayos de fuego y los lanzas contra criaturas u objetos dentro del alcance. Puedes dirigirlos al mismo objetivo o a distintos. Haz un ataque de conjuro a distancia por cada rayo: si impacta, inflige 2d6 de daño por fuego.",
+    "clases": ["Hechicero", "Mago"],
+    "escalado": "Al lanzarlo con una casilla de nivel superior, se crea un rayo adicional por cada nivel por encima del 2."
+  }
+}

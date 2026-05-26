@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Salpicadura Ácida",
+    "nivel": 0,
+    "escuela": "Conjuración",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "18 metros",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": false,
+      "descripcion_material": null
+    },
+    "duracion": "Instantánea",
+    "concentracion": false,
+    "ritual": false,
+    "descripcion": "Lanzas una burbuja de ácido contra una criatura que puedas ver dentro del alcance, o contra dos criaturas a 1,5 metros entre sí. Cada objetivo debe superar una tirada de salvación de Destreza o sufrirá 1d6 de daño por ácido.",
+    "clases": ["Hechicero", "Mago"],
+    "escalado": "El daño aumenta en 1d6 al alcanzar los niveles 5, 11 y 17."
+  }
+}

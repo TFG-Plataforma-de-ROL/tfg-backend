@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Levitar",
+    "nivel": 2,
+    "escuela": "Transmutación",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "18 metros",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": true,
+      "descripcion_material": "Un pequeño grillete dorado o un trozo de cuero"
+    },
+    "duracion": "Concentración, hasta 10 minutos",
+    "concentracion": true,
+    "ritual": false,
+    "descripcion": "Una criatura u objeto de hasta 500 kg que puedas ver dentro del alcance asciende verticalmente hasta 6 metros y queda suspendido. Una criatura no dispuesta puede superar una tirada de salvación de Constitución para negarse.",
+    "clases": ["Hechicero", "Mago"],
+    "escalado": null
+  }
+}

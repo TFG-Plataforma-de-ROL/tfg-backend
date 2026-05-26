@@ -1,6 +1,11 @@
 {
   "clase": {
     "nombre": "Clérigo",
+    "lanzamiento_conjuros": {
+      "tipo": "completo",
+      "stat": "sab",
+      "trucos_por_nivel": [3,3,3,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5]
+    },
     "vida": {
       "dado": "d8",
       "nivel_1": 8,

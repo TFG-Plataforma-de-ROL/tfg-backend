@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Rayo de Debilidad",
+    "nivel": 2,
+    "escuela": "Necromancia",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "18 metros",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": false,
+      "descripcion_material": null
+    },
+    "duracion": "Concentración, hasta 1 minuto",
+    "concentracion": true,
+    "ritual": false,
+    "descripcion": "Un rayo de energía debilitante chisporrotea hacia una criatura visible. Haz un ataque de conjuro a distancia: si impacta, el objetivo inflige la mitad de daño con ataques de Fuerza. Al final de cada turno del objetivo puede hacer una tirada de salvación de Constitución para poner fin al efecto.",
+    "clases": ["Brujo", "Mago"],
+    "escalado": null
+  }
+}

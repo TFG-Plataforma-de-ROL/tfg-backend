@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Identificar",
+    "nivel": 1,
+    "escuela": "Adivinación",
+    "tiempo_lanzamiento": "1 minuto",
+    "alcance": "Toque",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": true,
+      "descripcion_material": "Una perla de al menos 100 po y una pluma de búho"
+    },
+    "duracion": "Instantánea",
+    "concentracion": false,
+    "ritual": true,
+    "descripcion": "Tocas un objeto durante el lanzamiento. Si es mágico, aprendes sus propiedades, cómo usarlas, si requiere sintonización, cuántas cargas tiene y si algún conjuro lo está afectando en ese momento.",
+    "clases": ["Bardo", "Mago"],
+    "escalado": null
+  }
+}

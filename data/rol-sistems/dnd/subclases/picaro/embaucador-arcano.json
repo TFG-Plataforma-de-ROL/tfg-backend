@@ -1,0 +1,22 @@
+{
+  "subclase": {
+    "nombre": "Embaucador Arcano",
+    "clase": "Pícaro",
+    "lanzamiento_conjuros": {
+      "tipo": "tercio",
+      "stat": "int",
+      "trucos_por_nivel": [0,0,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4]
+    },
+    "descripcion": "Algunos pícaros mejoran su maestría para el sigilo y la agilidad con magia, aprendiendo trucos de encantamiento e ilusión. Un Embaucador Arcano que se afane en sus estudios puede, con el tiempo, incluso llegar a aprender los secretos del libro de conjuros de un mago.",
+    "rasgos_nivel_3": [
+      {
+        "nombre": "Lanzamiento de conjuros",
+        "descripcion": "Aprendes a lanzar conjuros a través del estudio y la práctica. Conoces 3 trucos de mago y 3 conjuros de nivel 1 de las escuelas de Encantamiento e Ilusión. La Inteligencia es tu característica de lanzamiento de conjuros."
+      },
+      {
+        "nombre": "Robo de magia",
+        "descripcion": "Cuando impactas a una criatura con un ataque de arma, puedes usar tu Acción adicional para intentar robarle mágicamente el conocimiento de un conjuro. La criatura debe superar una tirada de salvación de Inteligencia o perderá un conjuro preparado de tu elección hasta que termine un Descanso largo."
+      }
+    ]
+  }
+}

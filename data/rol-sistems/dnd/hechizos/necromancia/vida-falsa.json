@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Vida Falsa",
+    "nivel": 1,
+    "escuela": "Necromancia",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "Personal",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": true,
+      "descripcion_material": "Un pequeño volumen de alcohol o licor destilado"
+    },
+    "duracion": "1 hora",
+    "concentracion": false,
+    "ritual": false,
+    "descripcion": "Te fortaleces con una imitación de la vitalidad no muerta. Obtienes 1d4+4 puntos de golpe temporales que duran hasta que el conjuro termine.",
+    "clases": ["Hechicero", "Mago"],
+    "escalado": "Al lanzarlo con una casilla de nivel superior, ganas 5 puntos de golpe temporales adicionales por cada nivel por encima del 1."
+  }
+}

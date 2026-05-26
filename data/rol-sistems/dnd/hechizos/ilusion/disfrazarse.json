@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Disfrazarse",
+    "nivel": 1,
+    "escuela": "Ilusión",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "Personal",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": false,
+      "descripcion_material": null
+    },
+    "duracion": "1 hora",
+    "concentracion": false,
+    "ritual": false,
+    "descripcion": "Cambias tu aspecto por arte ilusoria: puedes parecer hasta 30 cm más alto o bajo, más delgado o grueso, y alterar tu ropa y rasgos. El cambio no resiste el tacto: quien te toque notará tu forma real.",
+    "clases": ["Bardo", "Hechicero", "Mago"],
+    "escalado": null
+  }
+}

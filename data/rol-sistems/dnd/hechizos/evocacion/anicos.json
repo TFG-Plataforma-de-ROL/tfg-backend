@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Añicos",
+    "nivel": 2,
+    "escuela": "Evocación",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "18 metros",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": true,
+      "descripcion_material": "Un fragmento de mica"
+    },
+    "duracion": "Instantánea",
+    "concentracion": false,
+    "ritual": false,
+    "descripcion": "Un estruendo ensordecedor retumba en una esfera de 3 metros de radio. Cada criatura en el área debe superar una tirada de salvación de Constitución o sufrirá 3d8 de daño por trueno, o la mitad si tiene éxito. Las criaturas de material inorgánico (piedra, cristal, metal) tienen Desventaja en la salvación.",
+    "clases": ["Bardo", "Hechicero", "Brujo", "Mago"],
+    "escalado": "El daño aumenta en 1d8 por cada nivel de casilla por encima del 2."
+  }
+}

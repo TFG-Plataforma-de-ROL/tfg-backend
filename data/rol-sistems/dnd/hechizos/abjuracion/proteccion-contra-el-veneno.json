@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Protección contra el Veneno",
+    "nivel": 2,
+    "escuela": "Abjuración",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "Toque",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": false,
+      "descripcion_material": null
+    },
+    "duracion": "1 hora",
+    "concentracion": false,
+    "ritual": false,
+    "descripcion": "Tocas a una criatura. Si está Envenenada, neutralizas el veneno que la afecta. Por la duración, la criatura tiene Ventaja en las tiradas de salvación contra el Envenenamiento y tiene Resistencia al daño por veneno.",
+    "clases": ["Clérigo", "Druida", "Paladín", "Explorador"],
+    "escalado": null
+  }
+}

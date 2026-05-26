@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Tañido del Muerto",
+    "nivel": 0,
+    "escuela": "Necromancia",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "18 metros",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": false,
+      "descripcion_material": null
+    },
+    "duracion": "Instantánea",
+    "concentracion": false,
+    "ritual": false,
+    "descripcion": "Señalas a una criatura visible y el sonido de una campana funeraria la llena de agonía. Debe superar una tirada de salvación de Sabiduría o sufrirá 1d8 de daño necrótico. Si al objetivo le faltan puntos de golpe, sufre 1d12 en su lugar.",
+    "clases": ["Clérigo", "Brujo", "Mago"],
+    "escalado": "El daño aumenta en 1d8 (o 1d12) al alcanzar los niveles 5, 11 y 17."
+  }
+}

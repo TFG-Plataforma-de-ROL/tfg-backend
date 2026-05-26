@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Reparar",
+    "nivel": 0,
+    "escuela": "Transmutación",
+    "tiempo_lanzamiento": "1 minuto",
+    "alcance": "Toque",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": true,
+      "descripcion_material": "Dos imanes"
+    },
+    "duracion": "Instantánea",
+    "concentracion": false,
+    "ritual": false,
+    "descripcion": "Repara una rotura o desgarro en un objeto que toques, siempre que no sea mayor de 30 cm en ninguna dimensión. La reparación no deja rastro de la avería anterior.",
+    "clases": ["Bardo", "Clérigo", "Druida", "Mago"],
+    "escalado": null
+  }
+}

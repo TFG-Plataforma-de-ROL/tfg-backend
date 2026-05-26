@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Luces Danzarinas",
+    "nivel": 0,
+    "escuela": "Ilusión",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "36 metros",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": true,
+      "descripcion_material": "Un poco de fósforo o wychwood, o una piedra brillante"
+    },
+    "duracion": "Concentración, hasta 1 minuto",
+    "concentracion": true,
+    "ritual": false,
+    "descripcion": "Creas hasta cuatro luces del tamaño de una antorcha que flotan en el aire dentro del alcance. Puedes también combinarlas en una figura vagamente humanoide. Cada luz emite luz tenue en 3 metros.",
+    "clases": ["Bardo", "Hechicero", "Mago"],
+    "escalado": null
+  }
+}

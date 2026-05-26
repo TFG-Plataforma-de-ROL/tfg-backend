@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Sugestión",
+    "nivel": 2,
+    "escuela": "Encantamiento",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "9 metros",
+    "componentes": {
+      "verbal": true,
+      "somatico": false,
+      "material": true,
+      "descripcion_material": "Una lengua de serpiente y una hoja de miel o una gota de aceite de oliva"
+    },
+    "duracion": "Concentración, hasta 8 horas",
+    "concentracion": true,
+    "ritual": false,
+    "descripcion": "Sugieres un curso de acción en dos frases o menos a una criatura visible que pueda oírte y entenderte. Debe superar una tirada de salvación de Sabiduría o seguirá la sugerencia con toda su capacidad, siempre que no sea directamente dañina para ella.",
+    "clases": ["Bardo", "Hechicero", "Brujo", "Mago"],
+    "escalado": null
+  }
+}

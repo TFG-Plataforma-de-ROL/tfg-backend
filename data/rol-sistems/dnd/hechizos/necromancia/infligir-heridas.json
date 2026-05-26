@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Infligir Heridas",
+    "nivel": 1,
+    "escuela": "Necromancia",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "Toque",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": false,
+      "descripcion_material": null
+    },
+    "duracion": "Instantánea",
+    "concentracion": false,
+    "ritual": false,
+    "descripcion": "Haz un ataque de conjuro cuerpo a cuerpo contra una criatura que alcances. Si impacta, el objetivo sufre 2d10 de daño necrótico.",
+    "clases": ["Clérigo"],
+    "escalado": "Al lanzarlo con una casilla de nivel superior, el daño aumenta en 1d10 por cada nivel por encima del 1."
+  }
+}

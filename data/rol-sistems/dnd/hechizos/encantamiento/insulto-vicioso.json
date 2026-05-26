@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Insulto Vicioso",
+    "nivel": 0,
+    "escuela": "Encantamiento",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "18 metros",
+    "componentes": {
+      "verbal": true,
+      "somatico": false,
+      "material": false,
+      "descripcion_material": null
+    },
+    "duracion": "Instantánea",
+    "concentracion": false,
+    "ritual": false,
+    "descripcion": "Lanzas un aluvión de insultos mágicamente potenciados contra una criatura que puedas ver y que pueda oírte. Debe superar una tirada de salvación de Sabiduría o sufrirá 1d6 de daño psíquico y tendrá Desventaja en el siguiente ataque que haga antes del fin de su siguiente turno.",
+    "clases": ["Bardo"],
+    "escalado": "El daño aumenta en 1d6 al alcanzar los niveles 5, 11 y 17."
+  }
+}

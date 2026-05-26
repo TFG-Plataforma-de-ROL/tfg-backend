@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Llamarada",
+    "nivel": 0,
+    "escuela": "Evocación",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "36 metros",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": false,
+      "descripcion_material": null
+    },
+    "duracion": "Instantánea",
+    "concentracion": false,
+    "ritual": false,
+    "descripcion": "Lanzas una llama de fuego contra una criatura u objeto inflamable dentro del alcance. Haz un ataque de conjuro a distancia: si impacta, el objetivo sufre 1d10 de daño por fuego. Los objetos inflamables golpeados prenden fuego si no son portados.",
+    "clases": ["Hechicero", "Mago"],
+    "escalado": "El daño aumenta en 1d10 al alcanzar los niveles 5, 11 y 17."
+  }
+}

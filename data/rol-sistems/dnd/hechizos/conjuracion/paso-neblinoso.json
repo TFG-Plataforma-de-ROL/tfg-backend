@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Paso Neblinoso",
+    "nivel": 2,
+    "escuela": "Conjuración",
+    "tiempo_lanzamiento": "1 acción adicional",
+    "alcance": "Personal",
+    "componentes": {
+      "verbal": true,
+      "somatico": false,
+      "material": false,
+      "descripcion_material": null
+    },
+    "duracion": "Instantánea",
+    "concentracion": false,
+    "ritual": false,
+    "descripcion": "Envuelto brevemente en una neblina plateada, te teletransportas hasta 18 metros a un espacio desocupado que puedas ver.",
+    "clases": ["Hechicero", "Brujo", "Mago", "Paladín"],
+    "escalado": null
+  }
+}

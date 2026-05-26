@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Encantar Persona",
+    "nivel": 1,
+    "escuela": "Encantamiento",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "9 metros",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": false,
+      "descripcion_material": null
+    },
+    "duracion": "1 hora",
+    "concentracion": false,
+    "ritual": false,
+    "descripcion": "Intentas encantar a un humanoide visible dentro del alcance. Debe superar una tirada de salvación de Sabiduría o quedará Encantado por ti durante la duración, considerándote un amigo querido. Al terminar el conjuro, la criatura sabe que fue encantada.",
+    "clases": ["Bardo", "Druida", "Hechicero", "Brujo", "Mago"],
+    "escalado": "Al lanzarlo con una casilla de nivel superior, puedes afectar a una criatura adicional por cada nivel por encima del 1."
+  }
+}

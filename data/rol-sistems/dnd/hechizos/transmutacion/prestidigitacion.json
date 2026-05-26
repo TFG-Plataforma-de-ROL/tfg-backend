@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Prestidigitación",
+    "nivel": 0,
+    "escuela": "Transmutación",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "3 metros",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": false,
+      "descripcion_material": null
+    },
+    "duracion": "1 hora",
+    "concentracion": false,
+    "ritual": false,
+    "descripcion": "Un truco menor que los magos principiantes usan para practicar. Puedes crear un efecto sensorial inocuo, encender o apagar una vela, limpiar o ensuciar un objeto, enfriar o calentar hasta 1 kg de materia, o crear una marca inofensiva en un objeto.",
+    "clases": ["Bardo", "Hechicero", "Brujo", "Mago"],
+    "escalado": null
+  }
+}

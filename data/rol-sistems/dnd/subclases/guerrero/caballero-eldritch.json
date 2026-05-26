@@ -2,6 +2,11 @@
   "subclase": {
     "nombre": "Caballero Eldritch",
     "clase": "Guerrero",
+    "lanzamiento_conjuros": {
+      "tipo": "tercio",
+      "stat": "int",
+      "trucos_por_nivel": [0,0,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3]
+    },
     "descripcion": "El arquetipo del Caballero Eldritch combina la maestría marcial propia de todos los guerreros con el cuidadoso estudio de la magia. Los Caballeros Eldritch utilizan técnicas mágicas parecidas a las empleadas por los magos.",
     "rasgos_nivel_3": [
       {

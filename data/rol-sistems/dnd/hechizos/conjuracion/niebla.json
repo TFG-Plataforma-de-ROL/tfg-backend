@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Niebla",
+    "nivel": 1,
+    "escuela": "Conjuración",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "36 metros",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": false,
+      "descripcion_material": null
+    },
+    "duracion": "Concentración, hasta 1 hora",
+    "concentracion": true,
+    "ritual": false,
+    "descripcion": "Creas una esfera de niebla densa de 6 metros de radio centrada en un punto dentro del alcance. El área está muy oscurecida y bloquea la visión. Un viento de velocidad moderada o superior (al menos 15 km/h) la dispersa.",
+    "clases": ["Druida", "Explorador", "Hechicero", "Mago"],
+    "escalado": "Al lanzarlo con una casilla de nivel superior, el radio aumenta 6 metros por cada nivel por encima del 1."
+  }
+}

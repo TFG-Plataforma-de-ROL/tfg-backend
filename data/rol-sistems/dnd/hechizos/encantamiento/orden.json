@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Orden",
+    "nivel": 1,
+    "escuela": "Encantamiento",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "18 metros",
+    "componentes": {
+      "verbal": true,
+      "somatico": false,
+      "material": false,
+      "descripcion_material": null
+    },
+    "duracion": "1 asalto",
+    "concentracion": false,
+    "ritual": false,
+    "descripcion": "Pronuncias una orden de una sola palabra a una criatura visible dentro del alcance. Debe superar una tirada de salvación de Sabiduría o seguirá la orden en su siguiente turno. No funciona sobre No Muertos ni criaturas que no entiendan tu idioma.",
+    "clases": ["Clérigo", "Paladín"],
+    "escalado": "Al lanzarlo con una casilla de nivel superior, puedes afectar a una criatura adicional por cada nivel por encima del 1."
+  }
+}

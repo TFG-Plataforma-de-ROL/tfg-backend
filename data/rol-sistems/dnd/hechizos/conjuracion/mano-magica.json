@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Mano Mágica",
+    "nivel": 0,
+    "escuela": "Conjuración",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "9 metros",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": false,
+      "descripcion_material": null
+    },
+    "duracion": "1 minuto",
+    "concentracion": false,
+    "ritual": false,
+    "descripcion": "Una mano espectral y flotante aparece en un punto que eliges dentro del alcance. Puedes usarla para manipular objetos, abrir puertas sin cerradura, guardar o recuperar objetos de contenedores abiertos, o verter el contenido de un vial. La mano no puede atacar ni activar objetos mágicos.",
+    "clases": ["Bardo", "Hechicero", "Brujo", "Mago"],
+    "escalado": null
+  }
+}

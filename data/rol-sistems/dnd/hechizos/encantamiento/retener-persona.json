@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Retener Persona",
+    "nivel": 2,
+    "escuela": "Encantamiento",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "18 metros",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": true,
+      "descripcion_material": "Una pieza rígida de hierro"
+    },
+    "duracion": "Concentración, hasta 1 minuto",
+    "concentracion": true,
+    "ritual": false,
+    "descripcion": "Elige a un humanoide visible dentro del alcance. Debe superar una tirada de salvación de Sabiduría o quedará Paralizado. Al final de cada uno de sus turnos puede repetir la salvación para poner fin al efecto.",
+    "clases": ["Bardo", "Clérigo", "Druida", "Hechicero", "Brujo", "Mago"],
+    "escalado": "Al lanzarlo con una casilla de nivel superior, puedes afectar a un humanoide adicional por cada nivel por encima del 2."
+  }
+}

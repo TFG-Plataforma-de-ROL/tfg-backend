@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Imagen Silenciosa",
+    "nivel": 1,
+    "escuela": "Ilusión",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "18 metros",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": true,
+      "descripcion_material": "Un poco de vellón"
+    },
+    "duracion": "Concentración, hasta 10 minutos",
+    "concentracion": true,
+    "ritual": false,
+    "descripcion": "Creas la imagen visual de un objeto, criatura u otro fenómeno no mayor que un cubo de 4,5 metros. La ilusión es puramente visual: no produce sonido, olor ni ningún otro efecto sensorial.",
+    "clases": ["Bardo", "Hechicero", "Mago"],
+    "escalado": null
+  }
+}

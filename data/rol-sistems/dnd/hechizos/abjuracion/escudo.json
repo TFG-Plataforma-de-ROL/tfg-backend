@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Escudo",
+    "nivel": 1,
+    "escuela": "Abjuración",
+    "tiempo_lanzamiento": "1 reacción, que tomas cuando eres golpeado por un ataque o cuando un conjuro de Proyectil Mágico te tiene como objetivo",
+    "alcance": "Personal",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": false,
+      "descripcion_material": null
+    },
+    "duracion": "1 asalto",
+    "concentracion": false,
+    "ritual": false,
+    "descripcion": "Una barrera invisible de fuerza mágica aparece y te protege. Hasta el inicio de tu siguiente turno, tienes +5 a la CA, incluyendo el ataque que activó la reacción, y eres inmune a Proyectil Mágico.",
+    "clases": ["Mago", "Hechicero"],
+    "escalado": null
+  }
+}

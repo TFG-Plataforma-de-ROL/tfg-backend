@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Armadura de Mago",
+    "nivel": 1,
+    "escuela": "Abjuración",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "Toque",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": true,
+      "descripcion_material": "Un trozo de cuero curtido"
+    },
+    "duracion": "8 horas",
+    "concentracion": false,
+    "ritual": false,
+    "descripcion": "Tocas a una criatura dispuesta que no lleva armadura y una fuerza protectora mágica la rodea. La CA base de la criatura objetivo se convierte en 13 + su modificador de Destreza. El conjuro termina si la criatura se pone armadura.",
+    "clases": ["Mago", "Hechicero"],
+    "escalado": null
+  }
+}

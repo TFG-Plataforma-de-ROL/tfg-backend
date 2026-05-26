@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Red",
+    "nivel": 2,
+    "escuela": "Conjuración",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "18 metros",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": true,
+      "descripcion_material": "Un trozo de telaraña"
+    },
+    "duracion": "Concentración, hasta 1 hora",
+    "concentracion": true,
+    "ritual": false,
+    "descripcion": "Conjuras una masa de seda gruesa y pegajosa en un cubo de 6 metros anclado entre superficies sólidas. Las criaturas que estén en el área o que entren en ella quedan Restringidas. Una criatura puede usar su acción para intentar liberarse con una prueba de Fuerza (CD 15).",
+    "clases": ["Hechicero", "Mago"],
+    "escalado": null
+  }
+}

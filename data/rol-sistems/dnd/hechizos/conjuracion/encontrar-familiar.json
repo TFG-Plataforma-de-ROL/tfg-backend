@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Encontrar Familiar",
+    "nivel": 1,
+    "escuela": "Conjuración",
+    "tiempo_lanzamiento": "1 hora",
+    "alcance": "3 metros",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": true,
+      "descripcion_material": "10 po de carbón, incienso y hierbas que se consumen en un recipiente de latón"
+    },
+    "duracion": "Instantánea",
+    "concentracion": false,
+    "ritual": true,
+    "descripcion": "Obtienes los servicios de un familiar: un espíritu que adopta la forma animal de tu elección (cuervo, gato, rana, etc.). Puedes comunicarte telepáticamente con él y percibir a través de sus sentidos mientras estéis en el mismo plano.",
+    "clases": ["Mago"],
+    "escalado": null
+  }
+}

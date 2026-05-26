@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Ver Invisibilidad",
+    "nivel": 2,
+    "escuela": "Adivinación",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "Personal",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": true,
+      "descripcion_material": "Una pizca de talco y una pizca de polvo de plata"
+    },
+    "duracion": "1 hora",
+    "concentracion": false,
+    "ritual": false,
+    "descripcion": "Por la duración, ves criaturas y objetos invisibles como si fueran visibles. También puedes percibir el Plano Etéreo: los objetos y criaturas etéreos aparecen fantasmales y translúcidos.",
+    "clases": ["Bardo", "Hechicero", "Mago"],
+    "escalado": null
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Golpe Verdadero",
+    "nivel": 0,
+    "escuela": "Adivinación",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "Personal",
+    "componentes": {
+      "verbal": false,
+      "somatico": true,
+      "material": true,
+      "descripcion_material": "Un arma con la que tengas competencia y cuyo valor sea al menos 1 pc"
+    },
+    "duracion": "Instantánea",
+    "concentracion": false,
+    "ritual": false,
+    "descripcion": "Usando el arma como foco arcano, realizas un ataque mágico cuerpo a cuerpo o a distancia. Si impacta, el objetivo sufre 1d6 de daño radiante más 1d6 de daño adicional del tipo del arma usada.",
+    "clases": ["Bardo", "Hechicero", "Brujo", "Mago"],
+    "escalado": "El daño aumenta en 1d6 al alcanzar los niveles 5, 11 y 17."
+  }
+}

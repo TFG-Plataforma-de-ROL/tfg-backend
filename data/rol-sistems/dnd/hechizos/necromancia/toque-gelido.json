@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Toque Gélido",
+    "nivel": 0,
+    "escuela": "Necromancia",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "Personal (18 metros)",
+    "componentes": {
+      "verbal": true,
+      "somatico": true,
+      "material": false,
+      "descripcion_material": null
+    },
+    "duracion": "Instantánea",
+    "concentracion": false,
+    "ritual": false,
+    "descripcion": "Invocas la mano de un cadáver para aferrar a una criatura dentro del alcance. Haz un ataque de conjuro a distancia: si impacta, el objetivo sufre 1d10 de daño necrótico y no puede recuperar puntos de golpe hasta el inicio de tu siguiente turno.",
+    "clases": ["Hechicero", "Brujo", "Mago"],
+    "escalado": "El daño aumenta en 1d10 al alcanzar los niveles 5, 11 y 17."
+  }
+}

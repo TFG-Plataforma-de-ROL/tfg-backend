@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Ceguera/Sordera",
+    "nivel": 2,
+    "escuela": "Necromancia",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "9 metros",
+    "componentes": {
+      "verbal": true,
+      "somatico": false,
+      "material": false,
+      "descripcion_material": null
+    },
+    "duracion": "1 minuto",
+    "concentracion": false,
+    "ritual": false,
+    "descripcion": "Atas uno de los sentidos de un enemigo con magia abyecta. Elige un objetivo visible dentro del alcance: debe superar una tirada de salvación de Constitución o quedará Cegado o Ensordecido (a tu elección). Puede repetir la salvación al final de cada turno.",
+    "clases": ["Bardo", "Clérigo", "Hechicero", "Mago"],
+    "escalado": "Al lanzarlo con una casilla de nivel superior, puedes afectar a una criatura adicional por cada nivel por encima del 2."
+  }
+}

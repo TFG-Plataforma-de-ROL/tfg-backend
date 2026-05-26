@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Ilusión Menor",
+    "nivel": 0,
+    "escuela": "Ilusión",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "9 metros",
+    "componentes": {
+      "verbal": false,
+      "somatico": true,
+      "material": true,
+      "descripcion_material": "Un poco de vellón"
+    },
+    "duracion": "1 minuto",
+    "concentracion": false,
+    "ritual": false,
+    "descripcion": "Creas un sonido o la imagen de un objeto dentro del alcance. Si creas un sonido, puede ir desde un susurro hasta un grito. Si creas una imagen, no puede ser mayor que un cubo de 1,5 metros y es puramente visual.",
+    "clases": ["Bardo", "Hechicero", "Brujo", "Mago"],
+    "escalado": null
+  }
+}

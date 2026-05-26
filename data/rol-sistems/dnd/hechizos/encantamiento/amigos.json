@@ -1,0 +1,21 @@
+{
+  "hechizo": {
+    "nombre": "Amigos",
+    "nivel": 0,
+    "escuela": "Encantamiento",
+    "tiempo_lanzamiento": "1 acción",
+    "alcance": "Personal",
+    "componentes": {
+      "verbal": false,
+      "somatico": true,
+      "material": true,
+      "descripcion_material": "Una pequeña cantidad de maquillaje aplicada a la cara"
+    },
+    "duracion": "Concentración, hasta 1 minuto",
+    "concentracion": true,
+    "ritual": false,
+    "descripcion": "Mientras el conjuro está activo, tienes Ventaja en las pruebas de Carisma realizadas contra una criatura de tu elección que no sea hostil. Cuando el conjuro termine, la criatura se da cuenta de que has usado magia para influir en ella y puede volverse hostil.",
+    "clases": ["Bardo", "Hechicero", "Brujo", "Mago"],
+    "escalado": null
+  }
+}
