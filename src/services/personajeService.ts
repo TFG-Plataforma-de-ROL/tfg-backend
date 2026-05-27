@@ -31,8 +31,19 @@ export const personajeService = {
   },
 
   async deletePersonaje(idPersonaje: number, idUsuario: number) {
-    return prisma.personaje.deleteMany({
-      where: { id_personaje: idPersonaje, id_usuario: idUsuario },
+    return prisma.$transaction(async (tx) => {
+      const fichas = await tx.fichaPersonaje.findMany({
+        where: { id_personaje: idPersonaje, personaje: { id_usuario: idUsuario } },
+        select: { id_ficha: true },
+      });
+      if (fichas.length > 0) {
+        const fichaIds = fichas.map((f) => f.id_ficha);
+        await tx.campoValor.deleteMany({ where: { id_ficha: { in: fichaIds } } });
+        await tx.fichaPersonaje.deleteMany({ where: { id_ficha: { in: fichaIds } } });
+      }
+      return tx.personaje.deleteMany({
+        where: { id_personaje: idPersonaje, id_usuario: idUsuario },
+      });
     });
   },
 };
