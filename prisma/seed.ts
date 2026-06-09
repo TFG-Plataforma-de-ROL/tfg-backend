@@ -1,4 +1,7 @@
 import 'dotenv/config'
+import { readdirSync, readFileSync } from 'fs'
+import { join, dirname } from 'path'
+import { fileURLToPath } from 'url'
 import { PrismaClient } from '@prisma/client'
 import { PrismaPg } from '@prisma/adapter-pg'
 
@@ -6,6 +9,44 @@ const adapter = new PrismaPg({ connectionString: process.env.DATABASE_URL! })
 const prisma = new PrismaClient({ adapter })
 
 const DND_DIR = 'rol-sistems/dnd'
+
+// Directorio físico donde viven los JSON de datos (../data respecto a /prisma)
+const DATA_DIR = join(dirname(fileURLToPath(import.meta.url)), '../data')
+
+/**
+ * Recorre recursivamente una carpeta de DATA_DIR y devuelve, por cada JSON
+ * jugable, su nombre y la ruta relativa (la misma forma que ruta_json usa el resto del seed).
+ * - `claveRaiz` es la clave del objeto JSON de la que se extrae el nombre (p.ej. 'hechizo').
+ * - `excluir` son nombres de subcarpetas a ignorar (propiedades, maestrias, etc.).
+ */
+function leerItemsDeCarpeta(
+  subdir: string,
+  claveRaiz: string,
+  excluir: string[] = [],
+): { nombre: string; ruta: string }[] {
+  const baseAbs = join(DATA_DIR, DND_DIR, subdir)
+  const resultado: { nombre: string; ruta: string }[] = []
+
+  const recorrer = (abs: string) => {
+    for (const entrada of readdirSync(abs, { withFileTypes: true })) {
+      if (entrada.isDirectory()) {
+        if (excluir.includes(entrada.name)) continue
+        recorrer(join(abs, entrada.name))
+      } else if (entrada.name.endsWith('.json')) {
+        const rutaAbs = join(abs, entrada.name)
+        const json = JSON.parse(readFileSync(rutaAbs, 'utf-8'))
+        const nombre = json?.[claveRaiz]?.nombre
+        if (!nombre) continue
+        // ruta_json relativa a DATA_DIR, con separadores '/'
+        const rutaRel = rutaAbs.slice(DATA_DIR.length + 1).split('\\').join('/')
+        resultado.push({ nombre, ruta: rutaRel })
+      }
+    }
+  }
+
+  recorrer(baseAbs)
+  return resultado.sort((a, b) => a.nombre.localeCompare(b.nombre, 'es'))
+}
 
 const razas = [
   { id: 1, nombre: 'Humano',  ruta: `${DND_DIR}/razas/humano.json`  },
@@ -128,6 +169,36 @@ async function main() {
       update: { ruta_json: s.ruta },
       create: { id_sistema_rol: dnd.id_sistema_rol, tipo_item: 'subclase_clerigo', nombre: s.nombre, ruta_json: s.ruta },
     })
+  }
+
+  // --- Categorías leídas desde carpetas (IDs autogenerados) ---
+  // Los grupos anteriores usan IDs fijos (1..28) que NO avanzan la secuencia de
+  // autoincrement en Postgres. Antes de insertar con ID autogenerado, resincronizamos
+  // la secuencia al máximo id_item existente para evitar colisiones de clave primaria.
+  await prisma.$executeRawUnsafe(
+    `SELECT setval(pg_get_serial_sequence('item', 'id_item'), COALESCE((SELECT MAX(id_item) FROM item), 1))`,
+  )
+
+  // Cada entrada: tipo_item destino, subcarpeta, clave raíz del JSON y subcarpetas a excluir.
+  const categoriasPorCarpeta = [
+    { tipo: 'hechizo',   subdir: 'hechizos',         clave: 'hechizo',  excluir: [] },
+    { tipo: 'arma',      subdir: 'objetos/armas',    clave: 'arma',     excluir: ['propiedades', 'maestria'] },
+    { tipo: 'armadura',  subdir: 'objetos/armadura', clave: 'armadura', excluir: ['propiedades', 'sin-armadura'] },
+  ]
+
+  for (const cat of categoriasPorCarpeta) {
+    const items = leerItemsDeCarpeta(cat.subdir, cat.clave, cat.excluir)
+    // Idempotente: como el id es autogenerado, se limpian los de este tipo y se reinsertan.
+    await prisma.item.deleteMany({ where: { tipo_item: cat.tipo, id_sistema_rol: dnd.id_sistema_rol } })
+    await prisma.item.createMany({
+      data: items.map((it) => ({
+        id_sistema_rol: dnd.id_sistema_rol,
+        tipo_item: cat.tipo,
+        nombre: it.nombre,
+        ruta_json: it.ruta,
+      })),
+    })
+    console.log(`  ${cat.tipo}: ${items.length} items insertados`)
   }
 
   const plantilla = await prisma.fichaPlantilla.upsert({
