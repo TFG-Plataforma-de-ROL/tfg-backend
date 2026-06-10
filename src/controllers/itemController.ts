@@ -30,12 +30,12 @@ export const itemController = {
 
   async createItem(req: Request, res: Response): Promise<void> {
     try {
-      const { nombre, tipo_item, id_sistema_rol, ruta_json } = req.body;
+      const { nombre, tipo_item, id_sistema_rol, datos, subcategoria } = req.body;
       if (!nombre || !tipo_item) {
         res.status(400).json({ error: 'Campos requeridos: nombre, tipo_item' });
         return;
       }
-      const item = await itemService.createItem(nombre, tipo_item, id_sistema_rol, ruta_json);
+      const item = await itemService.createItem(nombre, tipo_item, id_sistema_rol, datos, subcategoria);
       res.status(201).json(item);
     } catch (error: unknown) {
       const message = error instanceof Error ? error.message : 'Error inesperado';
