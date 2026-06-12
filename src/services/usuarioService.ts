@@ -66,4 +66,19 @@ export const usuarioService = {
       data: { password: hashed },
     });
   },
+
+  async getAll() {
+    return prisma.usuario.findMany({
+      select: {
+        id_usuario: true,
+        nombre: true,
+        email: true,
+        avatar_url: true,
+        is_admin: true,
+        created_at: true,
+        _count: { select: { personajes: true } },
+      },
+      orderBy: { created_at: 'desc' },
+    });
+  },
 };

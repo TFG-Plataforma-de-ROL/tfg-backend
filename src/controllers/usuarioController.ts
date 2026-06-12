@@ -55,6 +55,16 @@ export const usuarioController = {
     }
   },
 
+  async getAll(_req: Request, res: Response): Promise<void> {
+    try {
+      const usuarios = await usuarioService.getAll();
+      res.json(usuarios);
+    } catch (error: unknown) {
+      const message = error instanceof Error ? error.message : 'Error inesperado';
+      res.status(500).json({ error: message });
+    }
+  },
+
   async updatePassword(req: Request, res: Response): Promise<void> {
     try {
       if (!req.user) { res.status(401).json({ error: 'No autorizado' }); return; }
