@@ -55,6 +55,18 @@ export const usuarioController = {
     }
   },
 
+  async deleteUsuario(req: Request, res: Response): Promise<void> {
+    try {
+      const id = Number(req.params.id);
+      if (req.user?.id === id) { res.status(400).json({ error: 'No puedes eliminarte a ti mismo' }); return; }
+      await usuarioService.deleteUsuario(id);
+      res.json({ message: 'Usuario eliminado' });
+    } catch (error: unknown) {
+      const message = error instanceof Error ? error.message : 'Error inesperado';
+      res.status(500).json({ error: message });
+    }
+  },
+
   async getAll(_req: Request, res: Response): Promise<void> {
     try {
       const usuarios = await usuarioService.getAll();

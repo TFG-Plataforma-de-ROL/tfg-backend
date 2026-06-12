@@ -67,6 +67,10 @@ export const usuarioService = {
     });
   },
 
+  async deleteUsuario(id: number) {
+    return prisma.usuario.delete({ where: { id_usuario: id } });
+  },
+
   async getAll() {
     return prisma.usuario.findMany({
       select: {

@@ -9,6 +9,7 @@ const router = Router();
 router.use(authMiddleware);
 
 router.get('/', adminMiddleware, usuarioController.getAll);
+router.delete('/:id', adminMiddleware, usuarioController.deleteUsuario);
 router.get('/me', usuarioController.getMe);
 router.patch('/me/nombre', usuarioController.updateNombre);
 router.patch('/me/email', usuarioController.updateEmail);
